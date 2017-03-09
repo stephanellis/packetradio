@@ -1,0 +1,1477 @@
+@@ -1 ?
+ Vous n'avez qu'un jeu reduit des commandes:
+
+ B  : DECONNEXION.
+ H  : Cette AIDE minimale.
+ KM : SUPRESSION de vos messages prives DEJA LUS.
+ LM : LISTE de vos messages PRIVES.
+ O  : Acces aux OPTIONS.
+ RM : LECTURE de vos messages PRIVES.
+ S  : ENVOI de messages.
+ T  : APPEL du Sysop.
+ ?  : AIDE.
+
+@@ 0 ?
+ *** Cette commande n'est pas disponible !!
+
+ C : Connexions - statistiques.
+ D : Documentation.
+ Q : QRA Locator.
+ N : Nomenclature.
+ T : Trajectographie.
+ F : Retour en mode messagerie.
+ B : Deconnexion.
+
+@@ 0 C
+ CONNEXIONS-STAT
+ ---------------
+   Statistiques sur l'utilisation et le fonctionnement de la BBS.
+
+   - Occupation des rubriques.
+   - Statistiques generales.
+   - Liste des connections (Carnet de trafic de la BBS).
+   - Histogramme horaire.
+   - Histogramme journalier.
+   - Liste des indicatifs.
+
+@@ 0 D
+
+ DOCUMENTATIONS
+ --------------
+ Vous trouverez dans cette rubrique les informations ou documentations
+ fournies par differents OMs. Cette rubrique est ouverte a tous, et tous les
+ articles,documentations, programmes que vous voudrez bien y mettre seront les
+ bienvenus.
+
+ La commande d'acces aux informations est uniquement numerique et represente
+ un numero d'ordre dans chaque menu.
+
+@@ 0 N
+ NOMENCLATURE
+ ------------
+ Cette rubrique permet d'obtenir les nom, prenom, adresse, telephone,
+ conditions de trafic etc... des OMs qui ont utilise cette BBS et qui ont
+ bien voulu y laisser ces renseignements.
+
+ Accepter de fournir ces renseignements peut vous rendre service a vous-meme
+ autant qu'aux autres OMS!
+
+ Le menu propose:
+
+   - Introduction ou modification de vos nom et adresse.
+   - Recherche de ces informations sur un OM.
+   - Liste des indicatifs qui se sont deja connectes sur cette BBS.
+
+ N'oubliez pas de mettre a jour vos propres informations.
+
+@@ 0 Q
+ QRA LOCATOR
+ -----------
+ Le QRA-Locator est une succession de 2 lettres, 2 chiffres et 2 lettres
+ donnant la position geographique d'une station du Monde avec une precision de
+ l'ordre d'une quinzaine de Km (Ex. de QRA Locator: JN03SP).
+ Ce code compact est universellement employe par les Radio-amateurs, en parti-
+ culier pendant les Contests.
+
+ Cette rubrique permet de calculer un QRA-Locator, mais aussi d'obtenir
+ l'azimuth entre 2 stations dont on connait les QRA-Locators (pour orientation
+ des antennes), ainsi que la distance les separant (avec cumul de distances
+ pour les contests!).
+
+ Le menu propose:
+ - Transformation de QRA-Locator en Longitude-Latitude.
+ - Transformation de Longitude-Latitude en QRA-Locator.
+ - Calcul de distance et azimut entre deux QRA-Locators.
+ - Cumul de distances entre une station et plusieurs QRA-Locators.
+
+@@ 0 T
+ TRAJECTOGRAPHIE SATELLITES
+ --------------------------
+ Cette rubrique est consacree aux satellites radio-amateurs, meteo etc...
+ Vous pouvez soit utiliser le programme de trajectographie du Serveur, soit
+ recuperer les parametres orbitaux pour les introduire dans votre propre
+ calcul de trajectographie. Les parametres orbitaux sont maintenus a jour automatiquement a partir des Bulletins AMSAT recus sur le reseau Packet.
+
+ Le menu propose:
+   - Calcul de trajectographie satellite.
+   - Affichage des parametres orbitaux.
+   - Caracteristiques de satellites amateurs.
+
+@@ 2 ?
+ *** Cette commande n'est pas disponible !!
+
+ Q : Transformation de QRA-Locator en Longitude-Latitude.
+ L : Transformation de Longitude-Latitude en QRA-Locator.
+ D : Calcul de distance et azimut entre deux QRA-Locators.
+ C : Cumul de distances entre une station et plusieurs QRA-Locators.
+ F : Retour au menu serveur.
+ B : Deconnexion.
+
+@@ 2 Q
+ Commande "Q":
+ -------------
+       Transformation d'un QRA-Locator en Longitude et Latitude. La Longitude
+       Ouest et la Latitude Nord sont donnees en degres minutes et en grades.
+
+@@ 2 L
+ Commande "L":
+ -------------
+        Transformation de Longitude et Latitude en QRA-Locator. La Longitude
+        Ouest et la Latitude Nord peuvent etre fournies en degres centesimaux,
+        degres minutes, ou grades.
+
+@@ 2 D
+ Commande "D":
+ -------------
+        Calcul de DISTANCE et azimut entre deux QRA-Locators. La distance est
+        donnee en Km et l'azimut en degres.
+
+@@ 2 C
+ Commande "C":
+ -------------
+        CUMUL de calcul de distances. Apres avoir fourni le QRA-Locator qui
+        servira d'origine pour les calculs, vous pourrez donner un QRA-Locator
+        de destination. La distance du calcul pourra etre cumulee avec une
+        seconde ou plusieurs autres stations, vous permettant ainsi de calculer
+        le nombre total de Km.
+
+@@ 3 ?
+ *** Cette commande n'est pas disponible !!
+
+ O : Occupation des rubriques.
+ G : Statistiques generales.
+ L : Liste des connections.
+ H : Histogramme horaire.
+ J : Histogramme journalier.
+ I : Liste des indicatifs.
+ F : Retour au menu serveur.
+ B : Deconnexion.
+
+@@ 3 O
+
+ Commande "O":
+ -------------
+       Pourcentage d'OCCUPATION des differentes rubriques du serveur a
+       l'instant de votre demande.
+
+@@ 3 G
+ Commande "G":
+ -------------
+       GENERALITES sur le serveur:
+
+         - Nombre de messages actifs.
+         - Nombre de connexions.
+         - Temps de connexions.
+         - Heures de pointe.
+
+@@ 3 L
+ Commande "L":
+ -------------
+       LISTE des connexions (Carnet de trafic). Pour chaque connexion sont
+       indiques le port, l'indicatif, la date et l'heure, ainsi que le temps de
+       connexion. La liste est donnee par ordre chronologique inverse.
+        *** prevoir cette en-tete en debut de tableau ***
+
+@@ 3 H
+ Commande "H":
+ -------------
+       Histogramme des connexions sur cette BBS en fonction des HEURES de
+       debut de connexion.
+
+  SYNTAXE:   "H<enter>": histogramme des heures de connexions pour l'ensemble
+                         du trafic memorise par le Serveur.
+
+             "H F1DCDC<enter>": histogramme des heures de connexions de F1DCDC.
+
+             "H FC1*<enter>": histogramme des heures de connexions des OMs
+                              dont l'indicatif commence par "FC1" .
+
+             "H FC*<enter>": histogramme des heures de connexions des OMs dont
+                             l'indicatif commence par "FC".
+
+@@ 3 J
+ Commande "J":
+ -------------
+       Histogramme des connexions sur cette BBS en fonction des JOURS de la
+       semaine.
+
+  SYNTAXE:   "J<enter>": histogramme des jours de trafic pour l'ensemble des
+                         connexions memorisees par le Serveur.
+
+             "J FC1CDC<enter>": histogramme des jours de connexions de FC1CDC.
+
+             "J FC1*<enter>": histogramme des jours de connexions des OMs dont
+                              l'indicatif commence par "FC1" .
+
+             "J FC*<enter>": histogramme des jours de connexions des OMs dont
+                             l'indicatif commence par "FC".
+
+             "J O*<enter>": histogramme des jours de connexions des OMs dont
+                            l'indicatif commence par "O".
+
+
+@@ 3 I
+ Commande "I":
+ -------------
+       Liste des indicatifs qui se sont connectes au serveur. Cette liste est
+       classee par ordre alphanumerique.
+
+  SYNTAXE:   "I<enter>": liste tous les indicatifs.
+
+             "I FC1*<enter>": liste les indicatifs commencant par "FC1" .
+
+             "I FC*<enter>": liste les indicatifs commencant par "FC" .
+
+             "I O*<enter>": liste les indicatifs commencant par "O" .
+
+@@ 4 H|?
+DOCUMENTATION:
+--------------
+Pour lire un des fichiers de la liste, tapez seulement son numero.
+
+Sysop : La description peut etre changee avec la commande D :
+D BBS.DOC Description
+
+@@ 4 F
+
+Commande F :
+------------
+Cette commande permet de revenir au menu du serveur. Si vous voulez quitter
+le mode SERVEUR et revenir en mode MESSAGERIE, tapez F de nouveau.
+
+@@ 4 B
+
+Commande B :
+------------
+Cette commande permet de vous deconnecter sans revenir en mode messagerie.
+
+@@ 4 D
+Commande D (Sysop uniquement) :
+-------------------------------
+
+Le sysop peut utiliser cette commande pour mettre a jour la description d'un
+fichier.
+
+D Nom-Fichier Description
+
+@@ 4 R
+Commande R :
+------------
+
+La commande R vous permet de revenir au niveau precedent de la documentation.
+
+@@ 5 ?
+ *** Cette commande n'est pas disponible !!
+
+ N : Modification de vos nom et adresse.
+ R : Recherche des informations sur un OM.
+ I : Liste des indicatifs connectes.
+ F : Retour au menu serveur.
+ B : Deconnexion.
+
+@@ 5 N
+ Commande "N":
+ -------------
+       Introduction ou modification de vos NOMS,adresse et telephones.
+       Si les renseignements du fichier Adresses sont errones ou s'ils ont
+       change, vous pouvez les modifier par cette commande. Un espace ou un
+       <return> en reponse a une question n'en modifie pas le contenu.
+       Si le contenu du fichier est correct, vous annulez la modification en
+       repondant "N" a la demande de modification finale.
+
+       Accepter de fournir ces renseignements peut vous rendre service a
+       vous-meme autant qu'aux autres OMS!
+
+@@ 5 R
+ Commande "R":
+ -------------
+       Recherche des coordonnees d'un OM. Si l'OM est en fichier, vous pouvez
+       avoir les renseignements le concernant.
+       Vous pouvez chainer l'indicatif de l'OM recherche derriere la commande.
+
+   SYNTAXE:   "R F6FBB<enter>"
+
+@@ 5 I
+ Commande "I":
+ -------------
+       Liste des indicatifs qui se sont connectes au serveur. Cette liste est
+       classee par ordre alphanumerique.
+
+  SYNTAXE:   "I<enter>": liste tous les indicatifs.
+
+             "I FC1*<enter>": liste les indicatifs commencant par "FC1" .
+
+             "I FC*<enter>": liste les indicatifs commencant par "FC" .
+
+             "I O*<enter>": liste les indicatifs commencant par "O" .
+
+@@ 6 ?
+ *** Cette commande n'est pas disponible !!
+
+ T : Calcul de trajectographie satellite.
+ P : Affichage des parametres orbitaux.
+ C : Caracteristiques de satellites amateurs.
+ F : Retour au menu serveur.
+ B : Deconnexion.
+
+@@ 6 T
+ Commande "T":
+ -------------
+       Calcul de trajectographie satellites. Apres avoir choisi le satellite
+       dont vous voulez la trajectographie, vous devez fournir la date et
+       l'heure auxquels les calculs commenceront. Respectez la syntaxe qui vous
+       est proposee. Votre position geographique reelle est prise en compte par
+       votre QRA-Locator, s'il est en fichier, (commande Nomenclature) sinon
+       le QRA-Locator du serveur sera utilise par defaut.
+
+       Le pas de calcul peut etre variable suivant les satellites.
+       Une ligne de parametres sera affichee par pas. Cette ligne de calcul
+       correspond a une elevation minimale de -5 degres (soit 5 degres sous
+       l'horizon.
+
+       La mise a jour des parametres orbitaux est assuree automatiquement a
+       partir des fichiers AMSAT diffuses sur le reseau Packet. 
+
+@@ 6 P
+ Commande "P":
+ -------------
+       Affichage des parametres orbitaux du satellite selectionne.
+       Ces parametres sont utilises pour les calculs de trajectograhie du
+       Serveur (commande "T") mais sont a la disposition des OMs possedant
+       leur propre programme de trajectographie.
+
+       La mise a jour des parametres orbitaux est assuree automatiquement a
+       partir des fichiers AMSAT diffuses sur le reseau Packet. 
+
+@@ 6 C
+ Commande "C":
+ -------------
+       Caracteristiques et informations concernant le satellite selectionne.
+
+  Nota: Compte-tenu de la difficulte de recuperer ces informations, les OMS
+        ayant des renseignements permettant de completer ou mettre a jour ce
+        fichier seront les bienvenus. Contactez le Sysop qui transmettra les
+        infos par forward @FRA.
+
+@@ 9 AIDE|HELP
+ Commande "AIDE" ou "HELP":
+ --------------------------
+       La commande "AIDE" ou "HELP" donne la liste des commandes disponibles
+       sous FBBDOS. 
+
+@@ 9 CD
+ Commande "CD":
+ --------------
+      La commande "CD" permet de changer de repertoire.
+
+ SYNTAXE:    "CD \TEST
+
+      "CD .." permet de revenir au repertoire precedent dans l'aborescence.
+
+
+@@ 9 COPY
+ Commande "COPY":
+ ----------------
+       La commande "COPY" permet de copier un fichier dans un autre fichier.
+       Le fichier destination, s'il existe deja, doit vous appartenir.
+
+ SYNTAXE:   "COPY TOTO.TXT TEST.TXT"
+
+@@ 9 DEL
+ Commande "DEL":
+ ---------------
+       La commande "DEL" permet de supprimer un fichier. Un fichier ne peut
+       etre supprime que s'il vous appartient .
+
+@@ 9 DIR
+ Commande "DIR":
+ ---------------
+       La commande "DIR" permet de visualiser le catalogue du repertoire ou
+       vous vous trouvez ou de celui que vous avez specifie apres DIR.
+
+ SYNTAXE:    "DIR \TEST"
+
+@@ 9 EDIT
+ Commande "EDIT":
+ ----------------
+       La commande "EDIT" permet d'editer un fichier. Il doit vous appartenir
+       s'il existe deja.
+
+       Plusieurs commandes sont disponibles:
+
+   ? : donne la liste des commandes de l'editeur.
+
+   A : Ajoute une ligne apres la ligne courante. Le texte de la ligne suit la 
+       commande et doit se terminer par le caractere /. Le caractere / peut
+       etre inclus dans une chaine de caracteres a condition d'etre precede par
+       le caractere \. Le caractere \, lui doit etre double pour etre
+       considere comme caractere valide. Le pointeur de ligne est sur la ligne
+       inseree.
+
+   B : Positionne le pointeur de ligne au debut du fichier.
+
+   E : Positionne le pointeur de ligne a la fin du fichier.
+
+   F : Recherche la premiere occurence d'une chaine de caracteres specifiee
+       apres la commande a partir de la ligne courante. La chaine de caracteres
+       doit etre terminee par le caractere /. Le caractere / peut etre inclus
+       dans une chaine de caracteres s'il est precede du caractere \ (voir
+       commande A).
+       Le pointeur de ligne est sur la ligne ou la chaine a ete trouvee.
+
+   I : Insere une ligne avant la ligne courante. Le texte de la ligne suit la
+       commande et doit se terminer par le caractere /. Voir commande A pour
+       inclure le caractere / dans la chaine de caracteres.
+       Le pointeur de ligne est sur la ligne inseree.
+
+   K : Supprime le nombre de lignes specifie avant la commande (3K) a partir de
+       la ligne courante. Si le nombre n'est pas specifie, la valeur 1 est
+       prise par defaut.
+
+   L : Deplace le pointeur du nombre de ligne specifie avant la commande (5L).
+       Ce nombre peut etre positif ou negatif.
+
+   N : Valide ou devalide la numerotation des lignes.
+
+   P : Affiche le nombre de lignes specifie avant la commande (8P) a partir de
+       la ligne courante.
+
+   R : Recherche la premiere occurence de la chaine de caracteres specifiee
+       apres la commande et la remplace par la deuxieme chaine (RTOTO TATA).
+       Les chaines de caracteres doivent etre terminees par le caractere /.
+       Voir commande A pour inclure un caractere / dans la chaine.
+       Le pointeur de ligne est sur la ligne modifiee.
+
+   S : Sauvegarde le fichier que vous editez.
+
+   Q : Quitte l'editeur mais n'effectue pas la sauvegarde. Pensez a faire un S
+       auparavant!
+
+   Exemples:
+
+       "EDIT>B5L10P" met le pointeur au debut du fichier, avance de 5 lignes
+                     et affiche 10 lignes.
+
+       "EDIT>B4L6K-2L1OP" met le pointeur au debut du fichier, avance de 4
+                          lignes, supprime 6 lignes, recule de 2 lignes et
+                          affiche 10 lignes.
+
+       "EDIT>BFBonjour/K-2L5P" met le pointeur en debut de fichier, recherche
+                               "Bonjour", supprime la ligne contenant "Bonjour"
+                               recule de 2 lignes et affiche 5 lignes.
+
+       "EDIT>BFBonjour/IC'est une nouvelle ligne avec un \/ dedans/-1L3P"
+             met le pointeur en debut de fichier, recherche "Bonjour", insere
+             la nouvelle ligne, recule de 1 ligne et affiche 3 lignes.
+
+       "EDIT>SQ"  sauvegarde le fichier edite et quitte l'editeur.
+
+@@ 9 EXIT|QUIT|F|B
+ Commandes "EXIT", "QUIT", "F", "B":
+ -----------------------------------
+  Sortie du FBBDOS et retour aux commandes de la messagerie.
+
+@@ 9 GET
+ Commande "GET":
+ ---------------
+  Permet de charger CHEZ VOUS un fichier ASCII (texte), ou de le visualiser
+  sans pagination. 
+
+ SYNTAXE: "GET FICHIER.TXT"
+
+@@ 9 LIST
+ Commande "LIST":
+ ---------------
+       La commande "LIST" permet de visualiser le catalogue du repertoire ou
+       vous vous trouvez ou de celui que vous avez specifie apres LIST.
+       La description est donnee pour chaque fichier.
+
+ SYNTAXE:    "LIST \TEST"
+
+@@ 9 MD|MKDIR
+ Commande "MD" ou "MKDIR":
+ -------------------------
+  Permet de creer un repertoire a partir du repertoire ou vous vous trouvez.
+
+ SYNTAXE: "MD \TEST"
+
+@@ 9 NEW
+ Commande "NEW":
+ ---------------
+ Donne la liste des fichiers nouveaux a partir du repertoire courant depuis la
+ derniere utilisation de cette commande ou de la commande "YN".
+
+@@ 9 O
+ La commande "O" (OPTIONS) permet de memoriser au niveau du serveur:
+
+ - Le nombre de lignes de votre ecran pour beneficier d'une pagination auto-
+   matique (c'est-a-dire d'un arret de l'affichage lorsque l'ecran est rempli).
+ - La langue de votre choix en ce qui concerne l'aide et les commentaires de
+   la BBS.
+
+ - Employee sans attribut, la commande "O" donne l'etat de la programmation de
+   ces 2 options.
+
+ SYNTAXE:   "O<enter>"
+
+ COMMANDES DERIVEES (possedent leur propre aide):
+
+ - "OP" valide ou devalide la pagination.
+ - "OP [nbre de lignes] initialise la pagination a n lignes.
+
+ - "OL" liste les langues disponibles.
+ - "OL [#langue]" selectionne la langue numero #.
+
+@@ 9 OP
+ La commande "OP" (OPTION PAGINATION) permet de memoriser au niveau du serveur
+ la pagination.
+
+ - La commande "OP [nb_lignes]" permet de memoriser dans la BBS le nombre de
+   lignes de votre ecran pour beneficier d'une pagination automatique
+   (c'est-a-dire d'un arret de l'affichage lorsque l'ecran est rempli).
+
+ SYNTAXE: "OP [nb_lignes]<enter>
+
+ - La commande "OP" (sans attribut) valide ou alternativement devalide la
+   pagination (flip-flop). Le dernier etat avant deconnexion sera retrouve a
+   la prochaine connexion sur la BBS.
+
+ SYNTAXE: "OP<enter>"
+
+ Rappel: employee sans attribut, la commande "O" donne l'etat de la program-
+         mation des options.
+
+@@ 9 OL
+ La commande "OL" (OPTION LANGUE) permet de programmer la langue de votre choix
+ pour l'aide et les commentaires de la BBS.
+ La BBS vous propose la liste des langues disponibles reperees par un numero.
+ La langue choisie est memorisee par la BBS.
+
+ SYNTAXE:   "OL [#langue]<enter>"
+
+ Rappel: employee sans attribut, la commande "O" donne l'etat de la program-
+         mation des options.
+
+@@ 9 PUT
+ Commande "PUT":
+ ---------------
+  Permet de charger dans la BBS un fichier ASCII (texte) que vous avez CHEZ
+  VOUS. Si ce fichier existe deja dans le repertoire ou vous vous trouvez,
+  celui-ci doit vous appartenir sinon le chargement vous sera refuse. 
+
+ SYNTAXE:  "PUT TEST.TXT"
+
+@@ 9 RD|RMDIR
+ Commande "RD" ou "RMDIR":
+ -------------------------
+  Permet de supprimer un repertoire. Un repertoire ne peut etre supprime que
+  s'il ne contient aucun fichier. 
+
+@@ 9 TYPE
+ Commande "TYPE":
+ ----------------
+  Permet de visualiser le contenu d'un fichier ASCII avec pagination si vous
+  avez cette option.
+
+@@ 9 VIEW
+ Commande "VIEW":
+ ---------------
+       La commande "VIEW" permet de visualiser le contenu du ou des fichiers
+       archive specifies (ZIP, ARC, etc...).
+
+ SYNTAXE:    "VIEW TEST.ZIP"
+
+@@ 9 XGET
+ Commande "XGET":
+ ----------------
+  Permet de charger un fichier binaire DE LA BBS VERS CHEZ VOUS en protocole
+  XModem. Ce protocole est reserve aux transferts telephoniques.
+
+ SYNTAXE:  "XGET FICHIER.EXE" puis suivre les instructions.
+
+@@ 9 XPUT
+ Commande "XPUT":
+ ----------------
+  Permet de mettre un fichier binaire DEPUIS CHEZ VOUS DANS LE REPERTOIRE
+  COURANT DU FBBDOS en protocole Xmodem.
+  Ce protocole est reserve aux transferts telephoniques.
+
+ SYNTAXE:   "XPUT TEST.EXE" puis suivre les instructions.
+
+@@ 9 YGET
+ Commande "YGET":
+ ----------------
+  Permet de charger un fichier binaire DE LA BBS VERS CHEZ VOUS en protocole
+  YAPP. Vous devez posseder vous-meme le protocole YAPP (TPK de FC1EBN p.ex)
+
+ SYNTAXE:  "YGET FICHIER.EXE" puis suivre les instructions.
+
+@@ 9 YPUT
+ Commande "YPUT":
+ ----------------
+  Permet de mettre un fichier binaire DEPUIS CHEZ VOUS DANS LE REPERTOIRE
+  COURANT DU FBBDOS en protocole YAPP.
+  Vous devez posseder vous-meme le protocole YAPP (TPK de FC1EBN p.ex)
+
+ SYNTAXE:   "YPUT TEST.EXE" puis suivre les instructions.
+
+@@ 14 ?
+ Le "?<enter>" ou le "H<enter>" (HELP) permet de lire cet AIDE de BASE.
+
+ Vous etes sur une BBS (Bulletin Board System) comprenant 2 parties:
+ - une MESSAGERIE orientee vers l'echange de messages personnels ou generaux,
+ - un SERVEUR oriente vers la documentation et des applications diverses.
+             VOUS ETES ACTUELLEMENT SUR LA MESSAGERIE     
+
+ SAVOIR UTILISER LA MESSAGERIE:
+ - Il existe une AIDE pour toutes les commandes. Elle est utilisable lorsque la
+   ligne des commandes s'affiche a l'ecran avec un prompt en debut de ligne.
+ 
+ SYNTAXE de L'AIDE :       "?[commande]<enter>"
+
+ EXEMPLES:
+ - tapez "?S<enter>" pour obtenir l'AIDE sur l'ENVOI DE MESSAGES (commande S).
+ - tapez "?SC<enter>" pour obtenir l'AIDE cette COMMANDE DERIVEE SC (SEND COPY)
+ - Tapez "?H<enter>" pour obtenir la LISTE DES COMMANDES.
+ - Tapez "?F<enter>" pour passer de la MESSAGERIE au SERVEUR (et vice-versa).
+
+ COMMANDES IMPORTANTES:
+
+ - La commande "A" (ABORT) permet d'interrompre l'une operation en cours.
+   Tapez simplement A suivi d'un retour-chariot (<enter>).
+   Employez-la aussi pour reprendre la main si vous etes dans l'embarras !!
+
+  "!" donne le status du serveur.
+  "=[INDICATIF]" permet de connecter une station presente sur une autre voie.
+  ">[INDICATIF] [TEXTE]" envoie ce texte en break a une autre station presente.
+
+ ATTENTION: Ces 3 commandes (dites cachees) n'apparaissent pas dans les lignes
+            de commandes! (mais possedent leur propre aide).
+
+    N'OUBLIEZ PAS DE TAPER <enter> OU <return> APRES CHAQUE COMMANDE!
+
+@@ 14 A
+ La commande "A" (ABORT) permet d'arreter en cours de lecture la reception
+ de ce que vous aviez demande.
+
+ SYNTAXE: Exceptionnellement, cette commande peut etre tapee a n'importe quel
+          moment:     "A<enter>"
+
+ Le serveur vous repond par "Interruption!" et vous redonne le prompt.
+
+ NOTA: Cette commande est immediate si vous etes en mode "pagination" (commande
+      "OP"), mais peut etre retardee en cas de lecture de longs messages car il
+       faut d'abord que les tampons memoires du serveur se vident.
+
+@@ 14 B
+ La commande "B" (BYE) vous deconnecte de la BBS.
+
+ SYNTAXE:  Tapez "B<enter>" pour vous deconnecter proprement.
+
+ - NOTA: Vous pouvez egalement vous deconnecter par la commande de deconnexion
+         de votre TNC.
+
+@@ 14 C
+ - La commande C (CONFERENCE) permet d'entrer dans la conference, et d'etablir
+  un QSO a plusieurs. Toute station connectee a la BBS peut y entrer.
+
+ SYNTAXE:  "C<enter>"
+
+
+ COMMANDES DERIVEES (possedent leur propre aide):
+
+ - AVANT d'entrer en conference, "CW" liste l'indicatif des conferenciers.
+                                 "!"  liste les utilisateurs actuels de la BBS.
+
+ - DANS la conference, les commandes disponibles sont differentes:
+   (elles commencent toujours par un point en premiere colonne).
+
+   ".H"  vous donne ce fichier d'aide.
+   ".W"  donne la liste des conferenciers.
+   ".C[port] INDICATIF" permet de connecter un autre utilisateur de la BBS.
+   ".Q"  permet de sortir de la conference.
+          ***** faire une cde donnant la liste des connectes a la BBS***
+
+@@ 14 CW
+  - AVANT d'entrer en conference par la commande "C", la commande "CW" liste
+    l'indicatif de tous les conferenciers.
+
+  SYNTAXE:  "CW<enter>"
+
+@@ 14 D
+ La commande D (DOS) a 2 fonctions:
+
+ 1) Employee seule, elle permet de passer sous FBBDOS (un DOS simplifie adapte
+    a la BBS) aussi bien en mode Messagerie que Serveur.
+
+ - SYNTAXE:  "D<enter>"
+
+ - COMMANDES DERIVEES disponibles sous FBBDOS:
+
+   AIDE HELP ou ?   : Affiche les commandes disponibles.
+   DIR              : Catalogue des fichiers du repertoire ou vous trouvez.
+   EDIT             : Editeur de texte.
+   GET              : Chargement VERS VOUS d'un fichier texte.
+   PUT              : Chargement VERS LA BBS d'un fichier texte.
+   CD               : Changement de repertoire.
+   MD ou MKDIR      : Creation d'un repertoire.
+   COPY             : Copie d'un fichier.
+   DEL              : Suppression d'un fichier.
+   RD ou RMDIR      : Suppression d'un repertoire.
+   TYPE             : Visualisation du contenu d'un fichier.
+   YGET             : Chargement VERS VOUS d'un programme sous protocole YAPP.
+   YPUT             : Chargement VERS LA BBS d'un programme sous protocole YAPP
+   EXIT,QUIT,F ou B : Sortie du FBBDOS et retour dans le mode ou vous vous
+                      trouviez auparavant (Messagerie ou Serveur).
+
+
+ 2) La commande "D [nomfichier]" permet de charger CHEZ VOUS un fichier se
+    trouvant dans le repertoire du FBBDOS.
+
+  SYNTAXE:  "D [nomfichier.ext]<enter>"
+
+  Nota: 1) La commande inverse (deposer un fichier de CHEZ VOUS DANS FBBDOS)
+           est la commande "U". Voir aussi la commande "W".
+        2) Si vous utilisez un ordinateur avec un programme "Packet" adequat,
+           vous pouvez recuperer ce fichier sur votre disque.
+       
+@@ 14 F
+ - La commande "F" (FLIP-FLOP) vous permet de passer du mode MESSAGERIE au mode
+   SERVEUR et reciproquement.
+
+ SYNTAXE: "F<enter>"
+
+ Rappel: Le SERVEUR est une base de documentation et d'applications diverses.
+
+@@ 14 G
+ -La commande "G" (GATEWAY) vous permet d'acceder au GATEWAY et d'utiliser la
+ BBS pour vous connecter a une station Packet quelconque sur une des frequences
+ proposees par le Serveur.
+
+ SYNTAXE:  "G<enter>"
+
+
+ COMMANDES DERIVEES DU GATEWAY (disponibles apres le choix de la frequence):
+
+    "B<enter>" : Sortie du gateway.
+    "K<enter>" : Passage en mode conversation.
+    "C<enter>" : Connexion.
+    "D<enter>" : Deconnexion.
+    "H<enter>" : Aide.
+    "J<enter>" : Liste des 20 dernieres stations entendues.
+
+ Apres avoir selectionne un des ports autorises, une voie vous sera affectee
+ si disponibilite. Cette voie prendra votre indicatif. Le passage en mode
+ conversation se fait automatiquement a la connexion du correspondant et le
+ retour en mode commande se fait a la deconnexion ou par le caractere Esc ou >.
+
+ Le passage en mode conversation se fait par la commande K.
+
+ La commande C doit etre suivie de l'indicatif du destinataire et
+ eventuellement de la lettre V suivie d'une liste de repeteurs.
+
+ SYNTAXE:    "C [Destinataire V repet1 repet2 ...]<enter>
+
+@@ 14 H
+ La commande "H" (HELP) liste les principales commandes de la MESSAGERIE.
+
+ 1) Commandes directes (une seule lettre):
+ =========================================
+
+  A : Abort      : Interrompt l'envoi de donnees.
+  B : Bye        : Quitte et deconnecte la messagerie.
+  C : Conference : Acces a la conference.
+  D : DOS        : Acces au FBBDOS.
+  F : Flip-flop  : Acces au mode serveur.
+  G : Gateway    : Acces aux autres frequences par 'gateway'.
+  H : Help       : Aide.
+  I : Infos      : Donne des informations sur le systeme.
+  T : Talk       : Appeller l'operateur.
+  V : Version    : Donne la version du logiciel de Serveur.
+  W : What       : Donne le repertoire des fichiers du FBBDOS.
+  X : Expert     : Changement de Mode entre Normal et Expert (et vice-versa).
+  Y : YAPP       : Transfert de fichiers binaires avec le protocole YAPP.
+  ?Z:            : Liste des regions francaises pour le forward hierarchise.
+  ! :            : Informations sur la BBS.
+
+ 2) Commandes avec Qualifier:
+ ============================
+
+  J : Jheard           : Liste des dernieres stations connectees.
+  K : Kill             : Supression de messages.
+  L : List             : Liste des messages.
+  N : Name             : Modification du prenom.
+  O : Option           : Selectionne les options .
+  R : Read             : Lecture des messages.
+  S : Send             : Envoi de messages.
+  V : Verbose          : Lecture des messages avec en-tete.
+  =[indicatif]         : Connecte un autre utilisateur de la BBS.
+  >[indicatif] [texte] : Envoie un "break" a un autre utilisateur de la BBS.
+
+ Pour l'aide complete de chaque commande, tapez ?n (n = lettre(s) de commande).
+
+ SYNTAXE:  "?LM<enter>" donne l'aide detaillee de la commande "LM".
+
+@@ 14 I
+ La commande "I" (INFORMATIONS) donne des informations sur cette BBS:
+
+ - QTH de la BBS.
+ - Description du materiel.
+ - Reference du logiciel.
+ - Caracteristiques des ports.
+ - Langues disponibles.
+
+ SYNTAXE:   "I<enter>"
+
+@@ 14 J
+ La commande "J" (JHEARD) donne la liste des indicatifs entendus ou connectes
+ sur la BBS. La commande "J" doit toujours comporter 2 caracteres.
+
+ SYNTAXE:
+ - Tapez "JK<enter>" pour lister les 20 derniers indicatifs connectes.
+
+ - Tapez "JA<enter>" pour lister les indicatifs connectes sur le port A.
+ - Tapez "JB<enter>" pour lister les indicatifs connectes sur le port B.
+ - Tapez "JC<enter>" pour lister les indicatifs connectes sur le port C, etc...
+
+ - Tapez "J1<enter>" pour lister les indicatifs entendus sur le port A.
+ - Tapez "J2<enter>" pour lister les indicatifs entendus sur le port B.
+ - Tapez "J3<enter>" pour lister les indicatifs entendus sur le port C, etc...
+
+@@ 14 JK
+ La commande "JK" donne la liste des 20 derniers indicatifs connectes sur la
+ BBS.
+
+ SYNTAXE:
+         "JK<enter>"
+
+@@ 14 JA|JB|JC|JD|JE|JF|JG|JH
+ Les commandes "JA" a "JH" donnent la liste les indicatifs CONNECTES sur les
+ ports A a H de la BBS.
+
+  SYNTAXE:  "JA<enter>"
+
+@@ 14 J1|J2|J3|J4|J5|J6|J7|J8
+ Les commandes "J1" a "J8" donnent la liste des indicatifs ENTENDUS sur les
+ ports A a H de la BBS.
+
+  SYNTAXE:  "J1<enter>"
+
+@@ 14 K
+ La commande "K" (KILL) permet de supprimer les messages envoyes PAR VOUS ou
+ POUR VOUS.
+
+ SYNTAXE:
+          "K [#msg]<enter>" supprime un message numero (#).
+
+ COMMANDE DERIVEE (voir ?KM):
+
+  "KM" supprime tous les messages pour vous que vous avez deja lus.
+       Les messages que vous n'avez pas encore lus ne seront pas supprimes.
+
+ NOTA: Vous ne pouvez pas supprimer de fichiers, seul le SysOp le peut.
+
+@@ 14 KM
+ La commande "KM" (KILL MINE) supprime tous les messages POUR VOUS que vous
+ avez deja lus.
+ Les messages que vous n'avez pas encore lus ne seront pas supprimes.
+
+ SYNTAXE:
+          "KM<enter>"
+
+ NOTA: Vous ne pouvez pas supprimer de fichiers, seul le SysOp le peut.
+
+@@ 14 L
+ La commande "L" (LISTE) permet de lister de differentes facons les titres des
+ messages.
+
+ - Employee sans qualificatif, la commande "L" liste les titres des nouveaux
+   messages depuis le dernier usage de cette commande. Son utilisation regu-
+   liere permet de lire tous les titres des messages, sans oubli et sans avoir
+   a retenir le dernier numero lu.
+
+ SYNTAXE:   "L<enter>"
+
+
+ - La commande "L  [#msg]-" liste les titres des messages a partir d'un numero
+  [#msg]. La liste demarre du numero du message le plus recent et s'arrete au
+  numero [#msg].
+   
+ SYNTAXE:   "L [#msg]-<enter>"
+
+ Exemple: pour LISTER les titres des messages apres #11325, tapez "L 11325-".
+
+
+ - La commande "L  [#msg1]-[#msg2]" liste les titres des messages a partir d'un
+   numero [#msg1]. Elle s'arrete au numero [#msg2].
+   
+ SYNTAXE:   "L [#msg1]-[msg2]<enter>"
+
+ Exemple: pour LISTER les titres des messages de #11300 a #11350 tapez
+ "L 11300-11350".
+
+
+
+ COMMANDES DERIVEES (possedent leur propre aide):
+
+ - LB               : liste les bulletins.
+ - LC [theme]       : selection d'un theme.
+ - LM               : liste les messages POUR VOUS.
+ - LN               : liste les messages NOUVEAUX POUR VOUS.
+ - LL 10            : liste les 10 derniers messages.
+ - LR               : Liste en sens inverse.
+ - LS [texte]       : recherche de "texte" dans les titres de messages.
+ - L< [indicatif]   : liste les messages DE [indicatif].
+ - L> [indicatif]   : liste les messages POUR [indicatif].
+ - L@ [nomBBS]      : liste les messages VIA cette BBS.
+
+@@ 14 LB
+ La commande "LB" (LISTE BULLETIN) liste uniquement les bulletins.
+
+ SYNTAXE:    "LB<enter>"
+
+@@ 14 LC
+  La commande "LC" employee seule affiche le theme selectionne.
+
+  Suivie d'un theme, permet l'affichage des bulletins dont le theme
+  (destinataire) repond aux criteres.
+
+  Les jokers (* et ?) peuvent etre utilises.
+
+  "LC *DX*" permet de selectionner uniquement les bulletins dont le
+  theme contient "DX".
+
+  "LC *" permet de valider la totalite des bulletins.
+
+@@ 14 LM
+ La commande "LM" (LISTE MINE) liste les messages POUR VOUS.
+
+ SYNTAXE:    "LM<enter>"
+
+@@ 14 LN
+ La commande "LN" (LISTE NEW) liste les messages NOUVEAUX POUR VOUS.
+
+ SYNTAXE:    "LN<enter>"
+
+@@ 14 LL
+ La commande "LL [n]" liste les n derniers messages recus sur la messa-
+ gerie (avec "n" = nombre de messages a lister).
+
+ SYNTAXE:    "LL [nombre]<enter>"
+
+@@ 14 LR
+ La commande "LR" est identique a la commande L, mais les messages sont listes
+ en sens inverse, le plus ancien en tete.
+
+ - Employee sans qualificatif, la commande "LR" liste les titres des nouveaux
+   messages depuis le dernier usage de cette commande, le plus ancien d'abord.
+   Son utilisation reguliere permet de lire tous les titres des messages, sans
+   oubli et sans avoir a retenir le dernier numero lu.
+
+ SYNTAXE:   "LR<enter>"
+
+
+ - La commande "L  [#msg]-" liste les titres des messages a partir d'un numero
+   [#msg]. La liste demarre au numero [#msg] et s'arrete au numero du message
+   le plus recent.
+   
+ SYNTAXE:   "LR [#msg]-<enter>"
+
+ Exemple: pour LISTER les titres des messages apres #11325, tapez "L 11325-".
+
+
+ - La commande "LR  [#msg1]-[#msg2]" liste les titres des messages a partir
+   d'un numero [#msg1]. Elle s'arrete au numero [#msg2].
+   
+ SYNTAXE:   "LR [#msg1]-[msg2]<enter>"
+
+ Exemple: pour LISTER les titres des messages de #11300 a #11350 tapez
+ "LR 11300-11350".
+
+@@ 14 LS
+ La commande "LS [texte]" recherche la chaine de caracteres "texte" dans les
+ titres de messages et affiche les titres selectionnes.
+
+ SYNTAXE:    "LS [texte]<enter>"
+
+@@ 14 L<
+ La commande "L< [indicatif]" liste les messages DE [indicatif].
+
+ SYNTAXE:    "L< [indicatif]<enter>"
+
+@@ 14 L>
+ La commande "L> [indicatif]" liste les messages POUR [indicatif].
+
+ SYNTAXE:    "L> [indicatif]<enter>"
+
+@@ 14 L@
+ La commande "L@ [nomBBS]" liste les messages VIA cette BBS.
+ Nota: [nomBBS] s'ecrit sans le SSID (Ex. F6FBB et non F6FBB-1).
+
+ SYNTAXE:    "L@ [nomBBS]<enter>"
+
+@@ 14 M
+
+ La commande "M" (COPIE MESSAGE) permet de dupliquer un message vers un
+ fichier de FBBDOS.
+
+ - Employee sans qualificatif, la commande "M" duplique uniquement le contenu
+   du message, sans les entetes d'indication de routage. Seul le texte envoye
+   par l'expediteur sera duplique.
+
+ SYNTAXE:   "M [#msg] [nomFichier]"
+
+ COMMANDES DERIVEES (possedent leur propre aide):
+
+ - MH               : duplique avec le format de la commande R.
+ - MV               : duplique avec le format de la commande V.
+
+@@ 14 MH
+ La commande "MH" (COPIE MESSAGE + ENTETE) duplique un message dans un fichier
+ FBBDOS en utilisant le format de la commande R. L'entete de message est
+ recopie en debut de fichier, mais les indicateurs de routage ne sont pas
+ dupliques.  
+
+ SYNTAXE:   "MH [#msg] [nomFichier]"
+
+@@ 14 MV
+ La commande "MV" (COPIE MESSAGE + ENTETE + ROUTAGE) duplique un message dans
+ un fichier FBBDOS en utilisant le format de la commande V. L'entete de message
+ est recopie en debut de fichier ainsi que les indicateurs de routage.
+
+ SYNTAXE:   "MV [#msg] [nomFichier]"
+
+@@ 14 N
+ La commande "N" (preNom) vous permet d'entrer ou de modifier votre prenom.
+ Il sera memorise par la BBS. Vous pouvez utiliser jusqu'a 12 caracteres.
+ La BBS vous demandera de le re-entrer si necessaire.
+
+ SYNTAXE:  "N [Prenom]<enter>"
+
+@@ 14 NQ
+ La commande "NQ" (QthLocator) vous permet d'entrer ou de modifier votre
+ QthLocator. 
+ Il sera memorise par la BBS. Vous devez entrer le qth locator sous la forme
+ habituelle, 2 lettres, 2 chiffres puis 2 lettres, sans espace.
+
+ SYNTAXE:  "NQ [QthLocator]<enter>"
+
+@@ 14 O
+ La commande "O" (OPTIONS) permet de memoriser au niveau du serveur:
+
+ - Le nombre de lignes de votre ecran pour beneficier d'une pagination auto-
+   matique (c'est-a-dire d'un arret de l'affichage lorsque l'ecran est rempli).
+ - La langue de votre choix en ce qui concerne l'aide et les commentaires de
+   la BBS.
+
+ - Employee sans attribut, la commande "O" donne l'etat de la programmation de
+   ces 2 options.
+
+ SYNTAXE:   "O<enter>"
+
+ COMMANDES DERIVEES (possedent leur propre aide):
+
+ - "OP" valide ou devalide la pagination.
+ - "OP [nbre de lignes] initialise la pagination a n lignes.
+
+ - "OL" liste les langues disponibles.
+ - "OL [#langue]" selectionne la langue numero #.
+
+@@ 14 OP
+ La commande "OP" (OPTION PAGINATION) permet de memoriser au niveau du serveur
+ la pagination.
+
+ - La commande "OP [nb_lignes]" permet de memoriser dans la BBS le nombre de
+   lignes de votre ecran pour beneficier d'une pagination automatique
+   (c'est-a-dire d'un arret de l'affichage lorsque l'ecran est rempli).
+
+ SYNTAXE: "OP [nb_lignes]<enter>
+
+ - La commande "OP" (sans attribut) valide ou alternativement devalide la
+   pagination (flip-flop). Le dernier etat avant deconnexion sera retrouve a
+   la prochaine connexion sur la BBS.
+
+ SYNTAXE: "OP<enter>"
+
+ Rappel: employee sans attribut, la commande "O" donne l'etat de la program-
+         mation des options.
+
+@@ 14 OL
+ La commande "OL" (OPTION LANGUE) permet de programmer la langue de votre choix
+ pour l'aide et les commentaires de la BBS.
+ La BBS vous propose la liste des langues disponibles reperees par un numero.
+ La langue choisie est memorisee par la BBS.
+
+ SYNTAXE:   "OL [#langue]<enter>"
+
+ Rappel: employee sans attribut, la commande "O" donne l'etat de la program-
+         mation des options.
+
+@@ 14 R
+ La commande "R" (READ) permet de LIRE les MESSAGES en utilisant le numero
+ qui leur sont affectes. L'entete du message est reduit aux renseignements
+ principaux ( pour obtenir l'entete complet, utilisez la commande "V").
+
+ SYNTAXE:  "R [#msg]" affiche le texte du message numero "#msg".
+
+  Vous pouvez mettre jusqu'a 6 numeros par ligne.
+
+  Exemple : pour LIRE les msgs #11313 et #11325, tapez "R 11313 11325".
+                       N'oubliez pas l'ESPACE!!
+
+ COMMANDES DERIVEES (possedent leur propre aide):
+
+ - "RM" lit tous les messages POUR VOUS.
+ - "RN" lit tous les NOUVEAUX messages POUR VOUS.
+
+@@ 14 RM
+ La commande "RM" (READ MINE) permet de LIRE les messages PERSONNELS POUR VOUS.
+ (les messages s'afficheront les uns derriere les autres).
+
+ SYNTAXE:    "RM<enter>"
+
+@@ 14 RN
+ La commande "RN" (READ NEW) permet de LIRE tous les NOUVEAUX messages POUR
+ VOUS (les messages s'afficheront les uns derriere les autres).
+
+ SYNTAXE:    "RN<enter>"
+
+@@ 14 S
+ La commande "S" (SEND) permet d'ENVOYER un MESSAGE (mais pas un fichier).
+
+ SYNTAXE:
+    "S [indicatif]<enter>"    pour envoyer un message a "indicatif".
+
+    "S VENTE<enter>"    pour envoyer un message general qui pourra etre lu par
+       tous. Le mot "VENTE" est choisi de maniere a bien representer le theme
+       du message (eviter TOUS, ALL etc... qui n'apportent pas grand'chose).
+       Ce mot aura au maximum 6 caracteres.
+
+    "S [indicatif]@[nomBBS]<enter>"   pour envoyer un message au destinataire
+       "indicatif" via le reseau de transfert propre aux BBS. Le destinataire
+       trouvera le message dans la BBS "nomBBS" (FORWARDING).
+
+    "S VENTE@[nomBBS]<enter>"   pour envoyer un message general qui pourra etre
+       lu par tous.
+       Nota: [nomBBS] s'ecrit sans le SSID (Ex. F6FBB et non F6FBB-1).
+ 
+    "S VENTE@[diffusion]<enter>"    pour envoyer un message general qui sera
+       "forwarde" par le reseau de transfert propre aux BBS dans une zone
+       geographique definie par le code "diffusion" (de 6 caracteres maxi).
+
+  Exemple:"S ATARI@FRA" diffusera sur TOUTES les BBS de France (FRA) ce message
+          concernant ATARI: a utiliser judicieusement et sans exces!!!
+          En particulier, dans le cas d'un message vers l'etranger de type @EU
+          (pour EUROPE), le rediger EN ANGLAIS UNIQUEMENT!
+          Les codes de diffusion sont accessibles par la commande "Z".
+
+  Remarque:
+ - Si le destinataire correspond a un indicatif, le message sera classe
+   "PERSONNEL" par la messagerie.
+ - Si le destinataire correspond a un code tel que "ATARI" de l'exemple
+   precedent, le message sera classe "BULLETIN" par la messagerie.
+
+
+   COMMANDES DERIVEES (possedent leur propre aide):
+
+ - "SP [indicatif]" envoie un message du type personnel.
+
+ - "SP [indicatif]@[nomBBS]" envoie un message personnel sur "nomBBS".
+
+
+ - "SB HELP" envoie un bulletin recherche d'aide (lisible par tout le monde).
+
+ - "SB HELP@FRA" envoie un bulletin (lisible par tout le monde) et qui sera
+    depose dans toutes les BBS de France. 
+
+
+ - "SR [#msg] [Titre]" envoie une reponse au message numero "#msg".
+
+ - "SR" seul pour repondre au message que vous venez de lire.
+   Le message sera automatiquement redirige vers l'expediteur sans que vous 
+   ayiez a taper son indicatif et sa BBS de rattachement (dite "locale").
+
+
+ - "SC [#msg] [indicatif]" permet de dupliquer un message numero "#msg" et de
+   l'adresser au destinataire "indicatif".
+
+ - "SC [#msg] [ATARI]@FRA" permet de dupliquer un message numero "#msg" et de
+    le diffuser dans toutes les messageries de France.
+
+ - "SC [#msg] [ATARI]@[nomBBS]" permet de dupliquer un message numero "#msg" et
+    de le deposer dans la messagerie "nomBBS".
+
+
+ Dans tous les cas:
+   - le message doit se terminer par "Ctrl Z" ou "/EX" suivi d'un <return> ou
+     d'un <enter>.
+   - le /EX doit se trouver en 1ere colonne.
+
+@@ 14 SP
+ La commande "SP" (SEND PERSONNAL) permet d'ENVOYER un message qui sera
+ obligatoirement du type PERSONNEL.
+
+ SYNTAXE:
+
+    "SP [indicatif]<enter>" pour envoyer un message personnel sur la BBS.
+
+    "SP [indicatif]@[nomBBS]" pour envoyer un message personnel par "forwarding"
+                             sur la BBS citee.
+       Nota: [nomBBS] s'ecrit sans le SSID (Ex. F6FBB et non F6FBB-1).
+
+@@ 14 SB
+ La commande "SB" (SEND BULLETIN) permet d'ENVOYER un message qui sera
+ obligatoirement du type BULLETIN (lisible par tous).
+
+ SYNTAXE:
+
+ - "SB HELP<enter>" envoie un bulletin recherche d'aide (lisible par tous les
+                    lecteurs de la BBS).
+
+ - "SB HELP@FRA" envoie un bulletin (lisible par tout le monde) et qui sera
+                 depose dans toutes les BBS de France. 
+
+
+       Nota: [nomBBS] s'ecrit sans le SSID (Ex. F6FBB et non F6FBB-1).
+
+@@ 14 SR
+ La commande "SR" (SEND REPONSE) permet de repondre a un message que vous venez
+ de lire. Votre reponse sera automatiquement redirigee vers l'expediteur du
+ message auquel vous repondez. Cette commande permet de retrouver le destina-
+ taire et sa BBS de rattachement (dite aussi BBS locale) sans que vous ayiez
+ a le retaper.
+ Le titre du message original est conserve mais precede des lettres "RE:"
+ (comme REPONSE).
+
+ - Si vous voulez repondre au message que vous venez juste de lire, tapez
+   simplement "SR" et la BBS vous demandera le texte du message a envoyer.
+   Terminer comme a l'habitude par un CTRL-Z ou /EX.
+
+ SYNTAXE:   "SR<enter>"
+
+
+ - Si vous voulez repondre a un message plus ancien dont vous vous souvenez
+   du numero, tapez "SR [#msg]" et la BBS acheminera votre reponse au corres-
+   pondant qui avait ecrit le message numero "#msg", que ce soit un message
+   prive ou un bulletin general.
+
+ SYNTAXE:   "SR [#msg]<enter>"
+
+
+ - Si vous voulez repondre a un message dont vous voulez remplacer le titre,
+   tapez "SR [#msg] [titre]" et la BBS acheminera votre reponse au corres-
+   pondant qui avait ecrit le message numero "#msg" avec le nouveau titre.
+   La specification du numero de message est dans ce cas obligatoire.
+
+ SYNTAXE:   "SR [#msg] [titre]<enter>"
+
+@@ 14 SC
+ La commande "SC" (SEND COPY) permet de dupliquer un message de la BBS pour l'
+ envoyer a un autre destinataire. Le titre du message est conserve mais precede
+ des mots "CP [destinataire_nouveau] :" pour indiquer que c'est une copie qui
+ a ete faite par vous.
+
+ SYNTAXE:
+
+ - "SC [#msg] [indicatif]<enter>" copie un message numero "#msg" et l'adresse
+                                  au destinataire "indicatif".
+
+ - "SC [#msg] [ATARI]@FRA<enter>" copie un message numero "#msg" et le diffuse
+                                  dans toutes les messageries de France.
+
+ - "SC [#msg] [ATARI]@[nomBBS]<enter>" copie un message numero "#msg" et le
+                                       depose dans la messagerie "nomBBS".
+
+       Nota: [nomBBS] s'ecrit sans le SSID (Ex. F6FBB et non F6FBB-1).
+
+@@ 14 T
+ La commande "T" (TALK) permet de se connecter a l'Operateur Systeme (SysOp)
+ Il est prevenu par une sonnerie.
+
+  - Attendez sa reponse avant de frapper votre question.
+    Si le SysOp est disponible, il vous repondra dans la minute et vous pourrez
+    converser.
+
+  - Sinon, la messagerie vous dira qu'il ne repond pas et vous renverra le 
+    prompt et la ligne des commandes.
+
+ SYNTAXE:    "T<enter>"
+
+@@ 14 U
+ La commande "U" transfere un fichier de CHEZ VOUS VERS la MESSAGERIE.
+ Ce fichier sera alors ecrit dans le repertoire principal du FBBDOS.
+
+ La commande "U" se frappe apres le prompt de la BBS. Il n'est pas necessaire
+ de passer sous FBBDOS.
+
+ SYNTAXE:   "U [nomfichier.ext]<enter>"
+
+ Nota: La commande inverse (transferer un fichier de FBBDOS VERS CHEZ VOUS
+       est la commande "D". 
+       Voir aussi la commande "W".
+
+@@ 14 V
+ La commande "V" a 2 fonctions distinctes:
+
+   1) elle donne le numero de VERSION de cette BBS, le nombre de messages
+      actifs et le numero du message suivant.
+
+ SYNTAXE:    "V<enter>"
+
+
+ La commande "V" permet aussi de LIRE les MESSAGES comme la commande "L", mais
+ avec une entete complete comprenant:
+
+  - La ligne de STATUS
+  - La DATE
+  - Le TITRE du message
+  - Le CHEMIN complet effectue par ce message.
+
+ SYNTAXE  strictement identique aux commandes "R" mais en remplacant le "R"
+          par un "V".
+
+ Voici la liste des commandes disponibles. Reportez vous a l'aide de la
+ commande "R" pour plus de details:
+
+             - "V [#msg]" affiche le texte du message numero "#msg".
+             - "VM"       lit tous les messages POUR VOUS.
+             - "VN"       lit tous les NOUVEAUX messages POUR VOUS.
+
+@@ 14 W
+ La commande "W" permet de lister les fichiers qui se trouvent sous FBBDOS sans
+ etre sous FBBDOS.
+ Elle est equivalente a la commande DIR du FBBDOS mais se limite au repertoire
+ principal.
+
+ SYNTAXE:   "W<enter>
+
+@@ 14 X
+ La commande "X" change alternativement (flip-flop) votre status entre "NORMAL"
+ et "EXPERT".
+
+ "NORMAL"  donne les menus complets.
+
+ "EXPERT"  donne les informations minimales.
+
+ SYNTAXE: "X<enter>"
+
+@@ 14 Y
+ La commande "Y" permet de realiser des transferts binaires par le protocole
+ YAPP. Vous devez vous-meme posseder ce programme sur votre ordinateur.
+
+ La commande "Y" employee seule donne ce texte d'aide.
+
+ COMMANDES DE TRANSFERT (elles possedent leur propre aide):
+
+ - "YW"  liste les fichiers binaires disponibles.
+ - "YI"  liste les fichiers binaires disponibles + leurs infos.
+ - "YN"  liste les nouveaux fichiers depuis votre derniere connexion.
+
+ - "YU Fichier" demarre la procedure d'envoi d'un fichier de CHEZ VOUS VERS LA
+                BBS. Vous ne pouvez pas remplacer ou modifier un fichier deja
+                existant. Repondez aux questions que le programme de transfert
+                vous demande.
+
+ - "YD Fichier" demarre la procedure d'envoi d'un fichier de la BBS VERS CHEZ
+                VOUS. Repondez aux questions que le programme de transfert
+                vous demande.
+
+@@ 14 YW
+ La commande "YW" liste la bibliotheque des fichiers binaires disponibles
+ pouvant etre transferes DE LA BBS VERS VOUS.
+
+ SYNTAXE:   "YW<enter>"
+
+ Cette commande peut etre suivie d'un masque de selection. Les masques sont
+ d'une syntaxe identique a ceux de FBBDOS. Ex : *.ZIP  TE*.*  etc...
+
+ SYNTAXE:   "YW [masque]<enter>"
+
+@@ 14 YI
+ La commande "YI" liste comme la commande "YW" la bibliotheque des fichiers
+ binaires disponibles pouvant etre transferes DE LA BBS VERS VOUS mais en
+ fournissant en plus des renseignements sur le contenu de ces fichiers.
+
+ SYNTAXE:   "YI<enter>"
+
+ Cette commande peut etre suivie d'un masque de selection. Les masques sont
+ d'une syntaxe identique a ceux de FBBDOS. Ex : *.ZIP  TE*.*  etc...
+
+ SYNTAXE:   "YI [masque]<enter>"
+
+@@ 14 YN
+ La commande "YN" liste uniquement les nouveaux fichiers binaires integres dans
+ la bibliotheque YAPP depuis votre derniere connexion a la BBS.
+
+ SYNTAXE:   "YN<enter>"
+
+ Cette commande peut etre suivie d'un masque de selection. Les masques sont
+ d'une syntaxe identique a ceux de FBBDOS. Ex : *.ZIP  TE*.*  etc...
+
+ SYNTAXE:   "YN [masque]<enter>"
+
+@@ 14 YU
+ La commande "YU" demarre la procedure YAPP d'envoi d'un fichier de CHEZ VOUS
+ VERS LA BBS. Vous ne pouvez pas remplacer ou modifier un fichier deja
+ existant. Vous devez vous-meme posseder YAPP sur votre ordinateur.
+
+ Repondez aux questions que le programme de transfert vous demande.
+
+ SYNTAXE:   "YU [nomfichier.ext]<enter>"
+
+@@ 14 YD
+ La commande "YD" (YAPP DOWN) demarre la procedure YAPP d'envoi d'un fichier
+ DE LA BBS VERS CHEZ VOUS. Vous devez vous-meme posseder YAPP sur votre
+ ordinateur.
+
+ Repondez aux questions que le programme de transfert vous demande.
+
+ SYNTAXE:   "YD [nomfichier.ext]<enter>"
+
+@@ 16 H
+ La commande "G" (GATEWAY) vous permet d'acceder au GATEWAY et d'utiliser la
+ BBS pour vous connecter a une station Packet quelconque sur une des frequences
+ proposees par le Serveur.
+
+ SYNTAXE:  "G<enter>"
+
+
+ COMMANDES DERIVEES DU GATEWAY (disponibles apres le choix de la frequence):
+
+    "B<enter>" : Sortie du gateway.
+    "K<enter>" : Passage en mode conversation.
+    "C<enter>" : Connexion.
+    "D<enter>" : Deconnexion.
+    "H<enter>" : Aide.
+    "J<enter>" : Liste des 20 dernieres stations entendues.
+
+ Apres avoir selectionne un des ports autorises, une voie vous sera affectee
+ si disponibilite. Cette voie prendra votre indicatif. Le passage en mode
+ conversation se fait automatiquement a la connexion du correspondant et le
+ retour en mode commande se fait a la deconnexion ou par le caractere Esc ou >.
+
+ Le passage en mode conversation se fait par la commande K.
+
+ La commande C doit etre suivie de l'indicatif du destinataire et
+ eventuellement de la lettre V suivie d'une liste de repeteurs.
+
+ SYNTAXE:    "C [Destinataire V repet1 repet2 ...]<enter>
+
+@@ 18 C
+ - La commande C (CONFERENCE) permet d'entrer dans la conference, et d'etablir
+  un QSO a plusieurs. Toute station connectee a la BBS peut y entrer.
+
+ SYNTAXE:  "C<enter>"
+
+ COMMANDES DERIVEES (possedent leur propre aide):
+
+ - AVANT d'entrer en conference, "CW" liste l'indicatif des conferenciers.
+                                 "!"  liste les utilisateurs actuels de la BBS.
+
+ - DANS la conference, les commandes disponibles sont differentes:
+   (elles commencent toujours par un point en premiere colonne).
+
+   ".H"  donne ce fichier d'aide.
+   ".W"  donne la liste des conferenciers.
+   ".C[port] INDICATIF" permet de connecter un autre utilisateur de la BBS.
+   ".Q"  permet de sortir de la conference.

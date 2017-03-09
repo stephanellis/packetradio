@@ -1,0 +1,9 @@
+screen -t axlisten tail -f /tmp/axlog
+screen -t talksh bash unproto.sh
+split
+focus top
+select axlisten
+focus bottom
+resize -20
+select talksh 
+

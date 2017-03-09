@@ -1,0 +1,11 @@
+#
+# Password for all non defined callsigns (one case dependant line)
+#
+password
+#
+# Rights and password specific to callsigns (one or more lines)
+#
+F6ZZZ 63 1023 THIS_IS_THE_PASSWORD_OF_F6ZZZ
+#
+# End of passwd.sys file
+#

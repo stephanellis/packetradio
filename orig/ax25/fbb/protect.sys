@@ -1,0 +1,15 @@
+#
+# protect.sys file for FBB
+#
+
+#
+# This files gives a list of directory trees in which
+# files cannot be modified/created by FbbDos except 
+# in sysop mode with the needed rights
+#
+# path MUST be LINUX ABSOLUTE path (starting with a "/")
+#
+
+/var/ax25/fbb/fbbdos/readonly
+
+

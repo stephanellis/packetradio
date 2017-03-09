@@ -1,0 +1,294 @@
+#####################################
+# English texts for FBB 7.00 and up #
+# by LA6CU - revised by Gus I0OJJ   #
+#####################################
+# As of Apr 24, 2011
+#-------------------
+English
+OL: The mailbox will now use English language.$W
+Yes
+No
+SunMonTueWedThuFriSat
+JanFebMarAprMayJunJulAugSepOctNovDec
+North
+South
+East
+West
+$O Mailbox, QTH $c.$W
+$O BBS, $c.$WHello $I. $N active messages, last is $L, last listed is $Z. $W$WAssigned channels:$W$%
+$O BBS, QTH $?.$WHello $I, you are now on channel $=.$WHere are $N active messages, $L is last message and $W$Z is the last you have listed.$W$WAssigned channels:$W$%$W
+Please enter your name, like this          : N (your first name).$W
+Please enter your QTH (not ZIP), like this : NQ (QTH).$W
+Please enter your HOME BBS, like this      : NH (HomeBBS).$W
+Please enter your ZIP code, like this      : NZ (ZIP code).$W
+$O BBS, $c.$WYou have only limited access on this port.$W
+Sorry, only BBSs allowed on this port.$W
+$WThis is your first contact with this BBS.$W
+$WYou have $0 new (unread) message(s).$W$W
+$WYou have $0 redundant message(s).$WPlease kill them with KM.$W$W
+You have been connected $: - Computer time : $.$WBye, $I, and welcome back.$W
+Multiconnect 'server' type F6FBB V$E - Assigned channels:$W$%$W$N active messages - Last message $L - Last listed $Z.$WThere are new messages for : $Q$WConnect time : $: - Computer time : $.$W
+ENTER = continue, A = Abort, N = Next, C = remove paging -->
+Do you want to change anything (Y/N) ?
+Thank you ...$W
+$WOutput aborted !!$W$W
+Create it (Y/N) ?
+Your choice (L=show the full list, F=End the session) :
+ENTER = continue, A = Abort, R/V # = Read message # ->
+*** Error : Your answer is incorrect.$W
+*** Error : [$0] is not a valid command.$W
+*** Error : You forgot a space after the command.$W
+*** Error : Only numeric values are allowed.$W
+*** Error : Text after callsign is missing.$W
+*** Sorry, there is no help available for $0.$W
+*** Error : The 'To' field is missing.$W
+*** Error : The callsign is missing.$W
+*** Error : Unknown filename.$W
+*** Error : The character $0 is not allowed here.$W
+*** Error : Message #%M does not exist.$W
+*** Error : Filename $f does not exist.$W
+*** Error : You cannot kill message #%M.$W
+*** Error : #%M does not exist.$W
+*** Error : Invalid port.$W
+*** Error : Use the CD command.$W
+*** Error : The field $0 is too long.$W
+*** Error : The address for $0 is incorrect.$W
+*** Sorry, you have already downloaded %dkb this period.
+*** Error : Not found !$W
+*** Error : The filename is missing.$W
+*** Error : The 'destination' filename is missing.$W
+*** Error : Unknown language.$W
+*** Error : It is impossible to modify the file $f.$W
+*** Error : The directory $0 is unknown, or not empty.$W
+*** Error : The directory is missing.$W
+*** Error : It is impossible to create the directory $0.$W
+*** Error : The 'path' is missing.$W
+*** Error : The 'path' is too long.$W
+*** Error : The 'path' does not exist, or you are not authorized to enter.$W
+*** Error : It is impossible to create the file $f.$W
+*** Timeout !!$W
+($*) $O BBS>$W
+($*) $O BBS (B,H,KM,LM,O,RM,S,T,?) >$W
+($*) $O BBS (H for help) >$W
+There are no such messages (message choice: $l).$W
+There are no new messages for you.$W
+Enter the title for this message to %G : $W
+Enter the text for this message, end with Ctrl-Z or /EX on a blank line) : $W
+Message #%M has been killed.$W
+Software F6FBB V$E (%E) - $N active messages - Last message is #$L$W
+Please enter your first name :
+Thank you, $I.$W
+Callsign  LastConnect #Cnct RPBSXLFEMUI Name         Password     PRIV dir.$W
+$V is not available, you may leave a message for him in the mailbox.$W
+Wait while I page $V.$W
+$V did not answer, you may leave a message for him in the mailbox.$W
+Hello, $I, $V responds:$W
+Hang on, $V would like to talk to you.$W
+$WYou are now in 'Expert mode'.$W$W
+$WYou are now in 'Normal mode'.$W$W
+You are now in 'Server mode'. Type F <CR> to return in BBS mode.$W
+The file $f has been appended.$W
+Message for %G has been cancelled (message has no title).$W
+OP: You will now have no paging.$W
+OP: You will now have $p lines per page.$W
+This user is now connected. Editing not allowed.$W
+$0 $1 $2 $3 $j $K = $4'$5
+ON: 'Base number' is now $q. All message numbers will use this as a base.$W
+(B)id, (F)rom, (V)=@BBS, (T)o, T(I)tle, (S)tatus, T(Y)pe, (CR) finished >$W
+R,P,B,S,X,L,F,E,M,U,I. (On/Off).$WN name. W passwd. G language no. V priv dir. H HomeBBS. Z zip code. >$W
+$0 is an unknown callsign. Create it (Y/N) ?
+Delete $0 (Y/N) ?
+Available languages:$W
+($0):$1
+$W         --- End of message#: %M from %P to %G ---$W$W
+Forward status of message #$0:$W
+From        : %P$WTo          : %G$0$WType/Status : $t$s$WDate/Time   : $j-$a $K$WBID (MID)   : $R$W
+$WMsg#   TSLD  Size To    @Route  From   Date/Time Subject  [LC-choice: $l]$W
+$M $t$s$r%r $n $G$0 $P $i $1$W
+Message #   : %M$WSubject     : $S$W$W(This message has been read %C times so far in this BBS).$W$W
+Bid (Mid)   : $R$W$W
+Message # %M is sent @
+Routing (from $0) to $v.$W
+F>$W
+>$W
+NO - Incorrect parameter.$W
+N - BID$W
+OK $W
+*** Done$W
+Size: %n bytes$W
+We have no forwarding route for %A. SYSOP will be advised.$W
+Your reply will be sent to %G @$v$W
+OR: Access to all personal messages in the BBS : $0$W
+OM: Show list of new messages at logon         : $0$W
+Please enter your HomeBBS    :
+Please enter your ZIP code   :
+HomeBBS : $0      ZipCode : $1$W
+WP has no routing to %G. Press ENTER to abort and re-address.$W
+$W$0 messages are currently on 'hold'.$W
+(A)rchive, (K)ill, (L)ocal, (Q)uit, (R)ead, (V)erbose, (U)nhold, <CR> finished ?
+Message accepted and held for sysop revision prior to release.$W
+*** Busy - Please wait.$W
+*** Busy - Not possible to make contact right now.$W
+*** Sorry, $0 is not connected.$W
+$W$B*** Connected to $0 (End with Ctrl-Z).$W
+*** Disconnected.$W
+*** 'Break' from $0 ***$W
+*** End of 'break' ***$W
+'Break' for message from $0.$W
+Stop request from $0. Code : $1$W
+Stop request accepted, no connections.$W
+Reset request accepted, performing initialization.$W
+ENTER=continue, A=Abort -->
+Interrupt request rejected.$W
+You are in BBS mode. Type 'F <return>' for server mode.$W
+$W($*) SERVER MENU (C,D,N,Q,T,F,B. ?=help) >
+$W 
+$W(C) Connections Stat.$W(D) Docs.$W(Q) QTH Locator.$W(N) User data.$W(T) Satellites.$W(F) Return to BBS mode.$W(B) Disconnect.$W$WFor help, type ? (command).$W$WSERVER MENU (C,D,N,Q,T,F,B. ?=help) >
+$W($*) CONNECTIONS STAT. (G,H,I,J,L,O,F,B. ?=help) >
+$W
+$W(G) General$W(H) Use per hour$W(I) List callsigns$W(J) Use per day$W(L) Details$W(O) Percentages$W(F) Return to server menu$W(B) Disconnect$W$WFor detailed help, type ?(letter).$W$WCONNECTIONS STAT. (G,H,I,J,L,O,F,B. ?=help) >
+Use per day$W
+  MON  TUE  WED  THU  FRI  SAT  SUN$W
+Use per hour$W
+0 0 0 0 0 1 1 1 1 1 2 2  Hour$W
+0 2 4 6 8 0 2 4 6 8 0 2$W
+$N active messages$W
+#
+$0 Connects since $j-$a$W  
+Connects$W  Average time per connect : $0min $1s$W
+  Average conn. per day    : $0$W
+  Rush hours               : At $1 and $0 o'clock.$W
+Usage (in percent)$W
+  BBS                      : $0 % $W
+  Server                   : $0 % $W
+Server details:$W
+  DOS                      : $0 % $W
+  QTH Locator              : $0 % $W
+  Docs                     : $0 % $W
+  Connections stat         : $0 % $W
+  User data                : $0 % $W
+  Satellites               : $0 % $W
+$0 $1 $2 $3 $j-$a $K = $4'$5"$W
+$W($*) USER DATA (I,N,R,F,B.  ?=help) >
+$W
+$W(R) Read information$W(I) Show list of users$W(N) Change own datas$W(F) Return to SERVER menu.$W(B) Disconnect.$W$WFor detailed help, type ? (command).$W$WUSER DATA (I,N,R,F,B.  ?=help) >
+$WCallsign    : $0$W 
+Last connect was $j-$a at $K.$W
+HomeBBS     : $7$WName        : $1 $0$WAddress     : $2, $8 $3$WQTH Locator : $4.  Phone, home: $5; Phone, work: $6$W
+Please enter your surname    :
+House number and street name :
+City (without ZIP code !)    :
+Telephone, home              :
+Telephone, work              :
+Please enter your QTH locator:
+$WTotal $0 callsigns$W
+*** Callsign $0 is unknown.$W
+*** Wrong QTH locator.$W
+$W$W($*) SATELLITES (C,P,T,F,B.  ?=help) > 
+$W(M) Update parameters$W
+$W(C) Descriptions$W(P) Show orbiting parameters$W(T) Calculate orbital data$W(F) Return to SERVER menu$W(B) Disconnect$W$WFor detailed help, type ? (command).$WAfter you have used command C, P or T, send L for list !$W$WSATELLITES (C,P,T,F,B.  ?=help) >
+$WQTH Locator : $0    Satellite $1$W
+--------------------------------------------------------------$W
+| Time  | Az. | El. | Dpl. | Dist. | Alti. | Lon | Lat | Ph. |$W
+|  UTC  | Deg | Deg | KHz  |  Km   |  Km   | Deg | Deg | 256 |$W
+--------------- $j-$y ------ Orbit #$0 ----------------$W
+| $0:$1 | $2 | $3 | $4 | $5 | $6 | $7 | $8 | $9 |$W
+Enter start date for calculation (day/month/year):
+Enter start time for calculation (hour:min)      :
+$WPlease wait...$W
+$WThere is no information available for this satellite.$W
+Updated on $j-$y.$W
+Satellite name      :
+Reference orbit     :
+Reference year      :
+Reference day       :
+Mean anomaly        :
+Arg. of perigee     :
+R.A.A.N.            :
+Inclination         :
+Eccentricity        :
+Mean motion         :
+Derived mean motion :
+Estimated step      :
+Doppler frequency   :
+$WOrbiting parameters for $0$W
+Orbit number        : $0$W
+Epoch year          : $0$W
+Epoch day           : $0$W
+Mean anomaly        : $0$W
+Arg. of perigee     : $0$W
+R.A.A.N.            : $0$W
+Inclination         : $0$W
+Eccentricity        : $0$W
+Mean motion         : $0$W
+Derived mean motion : $0$W
+Estimated step      : $0$W$W
+($0) $1
+(F) End$W
+$W($*) QTH LOCATOR (C,D,L,Q,F,B.  ?=help) >
+$W
+$W(Q) QTH -> Long. Lat.$W(L) Long. Lat. -> QTH$W(D) Dist. and Azimuth$W(C) Distances$W(F) Return to server menu$W(B) Disconnect$W$WFor detailed help, type ? (command).$W$WQTH LOCATOR (C,D,L,Q,F,B.  ?=help) >
+$WQTH Locator (F,Q=Quit) :
+Geographical coordinates in the centre of the square :$W
+Longitude  : $0 degrees $1' $2 : $3 gr $2$W
+Latitude   : $0 degrees $1' $2 : $3 gr $2$W
+$WUse format$WIn degrees    : 1:45:00 (direction).$WIn gradians   : 1.5 (direction)$W(direction) shall be replaced by North, South, East or West.$W
+$WLongitude (East/West)  (F,Q=Quit) :
+$WLatitude (North/South) (F,Q=Quit) :
+$WQTH Locator (F,Q=Quit) : $0$W
+$WFrom QTH Locator (F,Q=Quit) :
+$WTo   QTH Locator (F,Q=Quit) :
+Azimuth  : $0 degr $1' : $2 gr$W
+Distance : $0 Km$W
+$WYour QTH Locator (F,Q=Quit) :
+$WTo QTH Locator   (F,Q=Quit) :
+Calculation no $0 - Total distance : $1 Km$W
+Calculation finished.$W
+$W($*) [%d/%mkb] $u:$0>
+Directory $0 deleted.$W
+File does not exist.$W
+$0 $1 $2 $3   $4 $5 $6 $7$W
+Download of $f was aborted.$W
+File $f is saved ($0 bytes, $1 bytes/sec).$W
+Upload file $f (end with Ctrl-Z).$W
+$0 bytes copied.$W
+$W$d-$a $T  FBBDOS V$E$W$WFormat :$W(1)        = (1 connected station)$W[%d/%mkb] = [downloaded %dkb until now/max allowed %mkb] in this period$WC:\>       = drive and path (like in MSDOS)$W
+$WAvailable FBBDOS commands :$W
+File $f has been deleted.$W
+$0 bytes free.$W
+$W$* connected station(s)$WDOCUMENTATION$0 (Number,L,R,B,F.  ?=Help) >
+$W(D)       = For sysop:  Description.$W
+$W(L)       = List$W(number)  = Read doc number$W(R)       = Return to previous level$W(F)       = Return to Server menu  $W(H H)     = More help$W(B)       = Disconnect$W$W($*) DOCS$0 (#,L,R,B,F.  ?=Help) >
+Does not exist.$W
+You are now on channel $=, port $!. $g available ports.$WH = Help. Q = Quit.$W
+Port number (Q = Quit) :
+You are now using channel $0 on that port. Frequency: $1.$W
+No available channels on that port.$W
+Cmd :
+Convers mode. Esc or > (return) for command mode.$W
+*** Error : You are already on this port !$W
+*** Error : Invalid port number.$W
+*** Gateway is not available.$W
+$O: INVALID COMMAND $0. (C,D,J,K,H,M,P,F,CQ,Q.?)$W
+Sending $f...$W
+Text capture opened in $f.$W
+Text capture closed.$W
+Ready to send $f with $0 protocol.$W
+Ready to receive $f with $0 protocol.$W
+Sorry, $0 is not allowed on this port.$W
+Describe the file, max 40 characters :
+$0 $1 $2 $3   $4$W
+You are now in the conference mode (Help = ".H").$W
+$H. Stations in the conference :$W
+Callsign : $0, channel $1.$W
+$H. $0 enters the conference.$W
+You leave the conference.$W
+$H. $0 leaves the conference.$W
+[$H - $0]$W
+Nobody else in the conference.$W
+$H.  $0 : Retry count exceeded.$W
+$H.  $0 is busy.$W
+$H.  $0 is not in the conference !$W
+Msg#     Dim  To     From   Title      (Theme:%T)$W
+$M%r $n $G $P $1$W
+%T - %t bulletins (B,F,H,L,R/V #) :

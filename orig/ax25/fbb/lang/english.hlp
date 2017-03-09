@@ -1,0 +1,1768 @@
+################################
+# ENGLISH.HLP for FBB 7.00     #
+#   by LA6CU 18/1 1997         #
+# Modified by N1API 10/3/97    #
+# And again by LA6CU 2/6/1998  #
+# Revised by I0OJJ 20/04/2011  #
+################################
+
+#################
+# Guests are -1 #
+#################
+
+@@ -1 ?
+
+You have only a limited set of commands :
+
+H  : Read this help text.
+KM : KILL all messages to you that you have read.
+LM : LIST all messages to you.
+O  : Choose 'options' (language, paging).
+RM : Read all messages to you.
+RN : Read all NEW messages to you.
+S  : SEND a message.
+T  : 'Talk' to sysop.
+B  : Bye (disconnect).
+
+#################
+# SERVERS are 0 #
+#################
+
+@@ 0 ?
+
+*** That command is not available here !!
+
+Available commands are :
+
+C : Connections - statistics.
+D : Documentation.
+N : Callbook (nomenclature).
+Q : QTH locator (calculations etc).
+T : Satellites, trajectory
+F : Return to BBS mode.
+B : Disconnect.
+
+Press ? [LETTER] for more detailed information on one special command.
+
+@@ 0 C
+
+CONNECTIONS - STATISITICS
+-------------------------
+
+This is where you can get statistical information on the use of this BBS.
+
+@@ 0 D
+
+DOCUMENTATION
+-------------
+
+This is where you can get information and documentation of various kinds.
+The commands are numerical.
+
+@@ 0 N
+
+CALLBOOK (NOMENCLATURE)
+------------------------
+
+In this module you will find any information that users want to
+leave, Surname, first name, address, telephone, etc ...
+
+You can enter your own information in the same way.
+
+@@ 0 Q
+
+QTH LOCATOR
+-----------
+The QTH Locator describes one geographical position.  This is done with a 
+succession of 2 letters, 2 numbers and 2 letters.  Example: FN31SH
+
+You can change a QTH locator into longitude and latitude, or viceversa,
+calculate the distances and headings between two QTH locators, or calculate
+your contest scores (cumulative distances).
+
+@@ 0 T
+
+SATELLITE TRAJECTORY
+--------------------
+Trajectory calculator, orbital parameters and the charactaristics of several
+amateur satellites.
+
+@@ 0 F
+
+RETURN TO BBS MODE.
+-------------------
+
+Use this command to return to BBS mode.
+
+@@ 0 B
+
+DISCONNECT.
+-----------
+
+With this command you can log off the BBS directly without going back to
+the BBS mode.
+
+###########################
+# QRA locator server is 2 #
+###########################
+
+@@ 2 ?
+
+*** That command is not available here !!
+
+Available commands are :
+
+C : Sum the distances between a point and several QTH locators.
+D : Calculate distance and heading between two QTH locators.
+L : Change longitude and latitude into QTH locator.
+Q : Change QTH locator into longitude and latitude.
+F : Return to the server menu.
+B : Disconnect.
+
+Press ? [LETTER] for more detailed information on one special command.
+
+@@ 2 Q
+
+Command  Q : Change a QTH Locator into longitude and latitude. The
+             longitude and latitude are given in degrees/minutes and
+             in gradians.
+
+@@ 2 L
+
+Command  L : Change Longitude and Latitude into a QTH Locator. The
+             longitude and latitude can be entered in degrees and
+             hundredths, degrees and minutes, or in gradians.
+
+             Correct format must be used:
+
+             Degrees     :  1:45:00 (direction)
+             Gradians    :  1.5 (direction)
+
+             where [direction] must be replaced by North, South, East or
+             West.  Remember to use a CAPITAL letter as the first letter!
+
+@@ 2 D
+
+Command  D : Calculate the distance and heading between two QTH locators.
+             The distance is given in Km and the heading in degrees.
+
+@@ 2 C
+
+Command  C : Sum of calculated distances. Having entered the QTH locator,
+             which serves as the origin for the calculations, you could
+             give a destination QTH locator.  The calculated distance
+             could be summed with a second or several other calculations.
+             It permits you to calculate the total number of Km.
+             Distances shorter than 1 km is given 1 point in the 
+             calculations.
+
+@@ 2 F
+
+Command F :
+-----------
+
+With this command you can go back to the server menu, and continue from
+there.  If you want to leave the server mode, you can press F once more.
+
+@@ 2 B
+
+Command B :
+-----------
+
+With this command you can log off from the BBS without going back to
+the BBS mode.
+
+###################
+# STATISTICS is 3 #
+###################
+
+@@ 3 ?
+
+*** That command is not available here !!
+
+Available commands are :
+
+G : General statistics.
+H : Graphic display of use per hour.
+I : List of callsigns who have used this BBS.
+J : Graphic display of use per day.
+L : Detailed list of connected stations (can be aborted by the A command).
+O : Use of the mailbox and BBS servers (percentages).
+F : Return to the server menu.
+B : Disconnect.
+
+Press ? [LETTER] for more detailed information on one special command.
+
+@@ 3 O
+
+Command  O : Shows the usage of the mailbox and servers (percentage), and
+             also the usage of each server individually.
+
+@@ 3 G
+
+Command  G : General statistics about the server:
+             - Number of active messages.
+             - Number of connections in this BBS.
+             - Average time per connect.
+             - Average number of connects per day.
+             - High-traffic hours.
+
+@@ 3 L
+
+Command  L : Show detailed information on each connect:
+
+             - Port (A, B, etc)
+             - Channel number
+             - Number of each connect (starting from 1)
+             - Callsign
+             - Date
+             - Time (start of connection)
+             - Number of minutes and seconds for the connect
+
+The list is shown in reverse chronological order, and can be aborted with
+the A command.
+
+@@ 3 H
+
+H         : Graphic display of mailbox usage each hour.
+H [call]  : Graphic display of usage of a callsign. 'Wildcards' are
+            allowed here.  For example:
+H W*      : Gives a graphic display of usage from all W stations.
+
+
+@@ 3 J
+
+J         : Graphic display of daily total use of the mailbox.
+J [call]  : Graphic display for a callsign. 'Wildcards' are allowed here.
+            For example:
+J W*      : Gives graphic display of usage from all W stations.
+
+
+@@ 3 I
+
+I          : List all callsigns that have used this mailbox.
+             The list is sorted in alphabetical order. 'Wildcards' are
+             allowed, for example:
+I W*       : Gives a list of all W stations.
+
+@@ 3 F
+
+Command F :
+-----------
+
+With this command you can go back to server menu, and continue from there.
+If you want to leave server mode, you can press F once more.
+
+@@ 3 B
+
+Command B :
+-----------
+
+With this command you can log off from the BBS without going back to
+the BBS mode first.
+
+######################
+# DOCUMENTATION is 4 #
+######################
+
+@@ 4 H
+
+DOCUMENTATION:
+--------------
+To read a file from the list, just type the number for the file.
+New files are entered with the NEWDOC server in BBS mode. Get help for
+this in BBS mode (? NEWDOC).
+
+Send L to see the list of files.
+
+Sysop:  DESCRIPTION can be changed with the D command:
+D BBS.DOC Description
+
+Press ? [LETTER] for more detailed information on one special command.
+
+
+@@ 4 F
+
+Command F :
+-----------
+
+With this command you can go back to the server menu, and continue from
+there.  If you want to leave the server mode, you can press F once more.
+
+@@ 4 B
+
+Command B :
+-----------
+
+With this command you can log off from the BBS without going back to the
+BBS mode first.
+
+@@ 4 D
+
+Command D (only for sysop) :
+----------------------------
+
+SYSOPs can use this command to edit the description of a file.  Command
+D (filename) (description)
+
+@@ 4 L
+
+Command L :
+-----------
+
+Use this command to see list of available files.
+
+
+@@ 4 R
+
+Command R :
+-----------
+
+If you have moved to a subdirectory of DOCS, use R to return to previous
+directory level.
+
+#####################
+# NOMENCLATURE is 5 #
+#####################
+
+@@ 5 ?
+
+*** That command is not available here !!
+
+Available commands are :
+
+I : List of callsigns that have connected.
+N : Change your name and address details, telephone number and QTH loc.
+R : Search for information on a user.
+F : Return to the server menu.
+B : Disconnect.
+
+Press ? [LETTER] for more detailed information on one special command.
+
+@@ 5 N
+
+Command  N : Change your name and address.  If the entries in the address
+             file are incorrect or they have changed, you can change them   
+             with this command.  A <space> or <return> in response to the
+             question will not modify the contents.  If the contents of the
+             file are correct, you stop the changes by replying N to the 
+             Change (Y/N) question.
+For SYSOP  : Sysop can change user-data with command N (callsign).
+
+@@ 5 R
+
+Command  R : Search for information on a user.  You can send R alone, then
+             the BBS will prompt you for a callsign, or you can send
+             R [callsign] directly.
+             Example: R LA6CU
+
+@@ 5 I
+
+Command  I : List of the callsigns that have connected to the BBS. This
+             is in alphabetical order.
+
+@@ 5 F
+
+Command F :
+-----------
+
+With this command you can go back to the server menu, and continue from
+there.  If you want to leave the server mode, you can press F once more.
+
+@@ 5 B
+
+Command B :
+-----------
+
+With this command you can log off from the BBS without going back to BBS
+mode first.
+
+#######################
+# TRAJECTOGRAPHY is 6 #
+#######################
+
+@@ 6 ?
+
+*** That command is not available here !!
+
+Available commands are :
+
+C : Charactaristics of amateur satellites.
+P : Obtain the orbital parameters.
+T : Calculate the trajectory of a satellite.
+F : Return to server menu.
+B : Disconnect.
+
+After commands C, P and T send L for list of satellites.
+
+Press ? [LETTER] for more detailed information on one special command.
+
+
+@@ 6 T
+
+Command  T : Calculate a satellite's trajectory.  After choosing the satellite
+             for which you want the trajectory, you have to enter the date and
+             time from which the calculations start. The geographical position
+             is the QTH locator of the connected station, if it is in the
+             file, else the QTH locator of the server will be used by default.
+             Following the satellites, the calculated pass could be variable,
+             and a line of parameters will be displayed each pass.  This
+             calculated line corresponds to a minimum elevation of -5 degrees,
+             when the satellite is 5 degrees below the horizon.
+
+             After command T send L for list of satellites.
+
+@@ 6 P
+
+Command  P : Display the orbital parameters of the selected satellite. These
+             parameters are used for the calculations.
+
+             After command P send L for list of satellites.
+
+@@ 6 C
+
+Command  C : Characteristics and information on the selected satellite.
+
+             After command C send L for list of satellites.
+
+
+@@ 6 F
+
+Command F :
+-----------
+
+With this command you can go back to the servermenu, and continue from
+there.  If you want to leave the server mode, you can press F once more.
+
+@@ 6 B
+
+Command B :
+-----------
+
+With this command you can log off from the BBS without going back to BBS
+mode first.
+
+###############
+# 9 is FBBDOS #
+###############
+
+@@ 9 ?
+
+Available commands in FBBDOS are:
+
+? and HELP          -  This help text.
+O                   -  Options (paging, base number, etc)
+BGET                -  Download a file with Autobin (via modem)
+BPUT                -  Upload a file with Autobin (via modem)     
+DIR                 -  Show directory listing.
+###########################################################################
+# New in 5.15:
+DU                  -  Show disk usage.
+###########################################################################
+EDIT                -  Edit a file.
+GET                 -  Download an ASCII file from the BBS.
+PUT                 -  Upload an ASCII file to the BBS.
+CD                  -  Change Directory.
+MD and MKDIR        -  Make Directory.
+COPY                -  Copy a file.
+DEL                 -  Delete a file.
+RD and RMDIR        -  Remove a Directory.
+TYPE                -  Download an ASCII file with paging.
+############################################################################
+# New in 5.15b
+BGET                -  Download a file with AUTOBIN (via radio)
+BPUT                -  Upload a file with AUTOBIN (via radio)
+YGET                -  Download a file with YAPP (via radio)
+YPUT                -  Upload a file with YAPP (via radio)
+XGET                -  Download a file with XMODEM (via modem)
+XPUT                -  Upload a file with XMODEM (via modem)
+X1GET               -  Download a file with 1k XMODEM (via modem)
+YGET                -  Download a file with YMODEM (via modem)
+ZGET                -  Download a file with ZMODEM (via modem)
+############################################################################
+LIST                -  Show directory-listing WITH labels (if available).
+PRIV                -  Go to a special directory (private...).
+VIEW                -  See contents of .ZIP, .ARC and .LZH files.
+WHERE filename      -  To find one or more files.
+NEW                 -  See all new files since last NEW command.
+EXIT, F and QUIT    -  Return to BBS mode.
+B                   -  Disconnect.
+You can go from one disk to another (like in MSDOS) with commands A: or
+C: ect. if the BBS uses more than one (physical or virtual) disk.
+
+For more detailed help with one command, type
+? (command)
+
+@@ 9 HELP
+
+Command "HELP":
+---------------
+Command "HELP" shows all available commands under FBBDOS.
+
+@@ 9 B
+
+Command "B":
+------------
+Logs off the BBS directly (disconnects).
+
+@@ 9 CD
+
+Command "CD":
+-------------
+Command 'CD' is used (like in DOS) to change directory.
+Example:  CD \TEST
+
+'CD ..' is used to go back to the previous directory level.
+
+
+@@ 9 COPY
+
+Command "COPY":
+---------------
+COPY command is for copying files.  If the filename already is used, the old
+file will be overwritten.
+
+Example:  COPY TOTO.TXT TEST.TXT
+
+@@ 9 DEL
+
+Command "DEL":
+--------------
+DEL command is for deleting files.  You can only delete files that YOU have
+uploaded, only SYSOP can delete other users' files.
+
+@@ 9 DIR
+
+Command "DIR":
+--------------
+DIR command shows the contents of the present directory.  DIR can also
+use a path, like: DIR \TEST   Wildcards are also allowed here, like:
+DIR *.SYS
+
+@@ 9 DOS
+
+SYSOP can now run DOS programs from remote.  Sysop must be in FBBDOS and
+send the command
+DOS [program] [parameter]
+Output from that program will go back to the sysop.  The program cannot take
+any input from the SYSOP after it has started.  If anything goes wrong in the
+task the DOS program is run, the task will be shut down after 3 minutes and
+the BBS will continue to work as before.
+
+###########################################################################
+# New in 5.15:
+@@ 9 DU
+
+Command "DU":
+-------------
+Use DU command to see the used/available disk space.
+###########################################################################
+
+@@ 9 EDIT
+
+Command "EDIT":
+---------------
+       This command is used for editing text files in this BBS.
+
+       These are the available commands:
+
+   ? : Shows all commands that can be used in the editor.
+
+   A : Adds a line after the current line.  The text for the new line
+       shall follow the letter A.  If more commands are to follow after
+       the text, the text must be ended with a '/' before next command.  If
+       the sign '/' itself is to used in the text, a '\' must be written
+       just before the '/'.  If again the '\' is to be used inside the text
+       as a valid character, it must be written twice ('\\').
+       The pointer will be at the start of the new line.
+
+   B : Go to start of file.
+
+   E : Go to end of file.
+
+   F : Search for the first occurrence of a character (or string of
+       characters) in the file.  The search starts at the current line.
+       The string of characters must be ended with a '/' if more commands
+       are chained (see the paragraph on the A command).
+
+   I : Insert a line before the current line.  Read about ending with a
+       '/' in the paragraph on the A command.
+
+   K : Delete the number of lines that are stated just before the letter K.
+       Example:  3K
+       If no number is used, then 1 line is deleted.
+
+   L : Move a number of lines from the current line.  The number can be
+       negative to move towards the start of the file.
+       Examples:  5L   -10L
+
+   N : Toggle line numbering on/off.
+
+   P : Show a number of lines from the current line.  Example 8P.  This
+       will show 8 lines, starting with the current line.
+
+   R : Search and replace.  Search for a string of characters and replace it
+       with a new one.  Example: 'R ALL/ALLE' will replace all ALL with ALLE
+       from the current line to the end of the file.
+
+   S : Save file.
+
+   Q : Exit the editor without saving the file.
+
+   Examples::
+
+       "EDIT>B5L10P" sets thepointer at start of file.  Move 5 lines down,
+                     and shows 10 lines from there.
+
+       'EDIT>B4L6K-2L1OP' sets the pointer to the start of file.  Move down
+                     4 lines.  Delete 6 lines.  Move back 2 lines, and show
+                     10 lines.
+
+       'EDIT>BFBonjour/K-2L5P' sets the pointer to the start of file,
+                     searches for 'Bonjour', deletes the line containing
+                     'Bonjour',  moves back 2 lines and shows 5 lines.
+
+       'EDIT>BFBonjour/IC'est une nouvelle ligne avec un \/ dedans/-1L3P'
+                     sets the pointer to start of file.   Searches for
+                     'Bonjour', inserts the new line.  The new line also
+                     contains the character '/'.  Goes back 1 line and
+                     shows 3 lines.
+
+       "EDIT>SQ"     save file and quit the editor.
+
+@@ 9 EXIT|QUIT|F
+
+Commands "EXIT", "QUIT", "F".
+-----------------------------
+Leave FBBDOS and return to BBS mode.
+
+@@ 9 GET
+
+Command "GET":
+--------------
+Use this command to download an ASCII file from the BBS without paging.
+Example: GET NORSK.MAN
+
+@@ 9 LIST
+
+Command "LIST":
+---------------
+Lists files (also ASCII files) in the same manner as YI lists YAPP files
+with labels.
+
+@@ 9 MD|MKDIR
+
+Commands "MD" or "MKDIR":
+-------------------------
+Use this command to make a new directory.
+Example: MD TEST
+
+@@ 9 NEW
+
+Command "NEW":
+--------------
+List all new files, in all available directories, that have arrived since 
+you last sent NEW.
+
+@@ 9 O|OL|ON|OR|OP
+
+Command "O".
+------------
+The O command gives you different options:
+O alone shows you what language you are using, paging and base number.
+- Type OP to toggle paging on messages.
+- Type OP [number of lines] to select paging with a specific number of
+  lines per page.
+- Type OL alone to get a list of available languages.
+- Type OL[space][language number] to choose a language.
+- Type ON alone to see your base number.
+- Type ON [number] to choose a new base number.  The number you type, will
+  be multiplied by 1000, so if you type ON 54, your base number will be 54000.
+  After that, you can type R 25 to read message number 6025.
+  It is also allowed to type ON 54000.
+- Type OR to choose if you want to list/read all personal messages in the BBS.
+- Type OM to choose if you want to receive the list of new messages at
+  every connect.
+
+
+@@ 9 PUT
+
+Command "PUT":
+--------------
+Use this command to upload an ASCII file to the BBS.  If the filename
+exists, the file will not be overwritten!  You must delete it first.
+However, you cannot delete files that have been uploaded by other users,
+you can only write over your 'own' files.
+Example: 'PUT TEST.TXT'
+
+@@ 9 PRIV
+
+Command PRIV
+------------
+PRIV is a special command in FBBDOS.  It gives authorized users access
+to a special directory.  All users can be authorized, not only sysops.
+
+@@ 9 RD|RMDIR
+
+Commands "RD" or "RMDIR":
+-------------------------
+Remove a directory with this command.  You can only remove empty directories,
+and only if YOU have created that directory.
+
+@@ 9 TYPE
+
+Command "TYPE":
+---------------
+Use this command to download a file from the BBS, using paging.  (That is;
+if you also use paging in BBS mode...).
+
+@@ 9 VIEW
+
+Command "VIEW".
+---------------
+Use this command to see the contents of archived files, like *.ZIP. *.LZH.
+*.ARC etc.  Use it like this:  VIEW filename.ext
+
+###########################################################################
+# BGET/BPUT new in 5.15b
+@@ 9 BGET
+
+Command "BGET":
+---------------
+
+Use via radio to download a file with AUTOBIN protocol.
+
+@@ 9 BPUT
+
+Command "BPUT":
+---------------
+
+Use via radio to upload a file with AUTOBIN protocol.
+##############################################################################
+
+#############################################################################
+# New in 5.15b: X1GET
+@@ 9 XGET|X1GET
+
+Commands "XGET" and "X1GET":
+----------------------------
+This command is used for downloading files with the XMODEM or 1K XMODEM
+protocol.  This works only on telephone modem port on the BBS.
+Example: 'XGET FICHIER.EXE'
+#############################################################################
+You can resume a download from the point you last stopped, with the command
+XGET (filename) (offset).  Example: XGET FICHIER.EXE 150000 starts the
+download from byte 150000.  The files can later be put together with the
+program called CUT.
+
+@@ 9 XPUT
+
+Command "XPUT":
+---------------
+This command is used for uploading files with the XMODEM protocole.  This
+works only on the telephone modem port on the BBS.
+Example: 'XPUT TEST.EXE'
+
+#############################################################################
+# New in 5.15b:  YGET for modem:
+@@ 9 YGET
+
+Command "YGET":
+--------------
+This command is used for downloading files with the YAPP protocole.
+Example: 'YGET FICHIER.EXE'
+
+Via telephone modem YGET can be used for downloading files with YMODEM,
+YMODEM BATCH or YMODEM G.
+##############################################################################
+
+@@ 9 YPUT
+
+Command "YPUT":
+---------------
+This command is used for uploading files with the YAPP protocol.
+Example:  'YPUT TEST.EXE'
+
+###########################################################################
+# ZGET for modem new in 5.15b
+@@ 9 ZGET
+
+Command "ZGET":
+---------------
+
+Use this command to download a file with the ZMODEM protocol.
+##############################################################################
+
+##################
+# BBS-mode is 14 #
+##################
+
+@@ 14 ?
+
+- Type ? [COMMAND] for the HELP on that command.
+Examples:
+ - type ? H for a list of all the most common commands.
+ - type ? O for help on available options (languages, paging, etc).
+   (Paging is toggled on/off with the OP command)
+ - Type ? REQDIR or ? REQFIL for the help on those servers.
+Remember to press <Enter> or <Return> after each command :).
+
+X : toggles your status between EXPERT and NORMAL user.
+A : can be used to abort listings.
+I : shows information about this system.
+Last used message number can be repeated by using the # character.
+Example:  R 1235.  Next command: K #
+
+For SYSOP:  Overview of all commands for sysop with ? SYSOP.
+            Overview of all the function keys with ? FUNCTION.
+
+@@ 14 A|ABORT
+
+In the middle of a long listing from the BBS, you can send the command
+A (ABORT) to stop the listing.  The listing will stop after a short while,
+and the BBS will ask you if you want to read some of these messages.
+The listing continues after reading the mesages.  If you want to continue
+listing messages, or if you want to stop all listings, the normal BBS
+prompt will return.
+
+#############################################################################
+# New in  5.15:  N of C
+When reading messages with paging, you can also use commands N and C if you
+are reading many messages.  For example if you sent R 123 234 345 654,
+Use N to skip the rest of current message and start with the next one.
+Use C to cancel paging for the rest of the messages.
+##############################################################################
+
+A can also be used many other places, for example when downloading long
+ASCII files, you can abort the file with the A command.
+
+@@ 14 ACK
+
+By typing
+/ACK
+in the first column of a line in a message, you will receive an acknowledge
+message from the receiver BBS when the message arrives there.  This works
+ONLY with FBB BBSs.
+
+@@ 14 B
+
+The 'B' command logs you off the PBBS and disconnects you.
+- Type 'B'  to LOG OFF gracefully [Bye].
+  (You may also type the full word BYE)
+Be sure to hit <Enter> or <Return> after each command.
+
+###########################################################################
+# Changed in 5.15
+- NOTE:  When you use B to disconnect, your last listet message (from this
+  session) is being saved till next connect.  If for some reason yoy are
+  disconnected, this last listed parameter is not changed.  You can
+  reconnect and relist the same messages once more.
+###########################################################################
+
+@@ 14 C|CW
+
+- The 'CW' command lists the callsigns in the conference.
+- The 'C' command lets you enter the conference.
+
+In the conference, all commands must begin by a period first.
+The commands are :
+
+.C [port] CALLSIGN [V DIGIPEATER ...] connects a callsign on a port.
+.D  disconnects a user from the conference.
+.H  gives you this help file.
+.W  lists the call signs in conference.
+.Q  lets you leave the conference.
+
+@@ 14 D|DOS|DOWNLOAD
+
+D command has 2 different functions.
+
+1) If you send D [filename], the mailbox will send you the file with that
+   name.  This file must be in the root directory for users.  If the
+   file is in a subdirectory, you must use the full path, like this:
+   D VHF/VHF.DX
+   See also help with the W command (? W).
+
+2) If you send the letter D alone, you will enter FBBDOS.  The commands in
+   FBBDOS are very similar to those of MSDOS.  Users have access to a part
+   of the BBS's harddisk in FBBDOS.  The following commands are allowed:
+
+   ?  HELP         >=  Use one of these to get help.
+   DIR             >=  List files in this directory.
+   MD MKDIR [name] >=  Use one of these to make a new directory.
+   RD RMDIR [name] >=  Use one of these to remove a directory.  You cannot
+                       be in the directory you want to remove, and the
+                       directory must be empty.
+   CD [name]       >=  Use CD to change directory.
+   COPY [from] [to]>=  Copy a file named [from] to a file named [to].
+                       Can also be used to copy between directories.
+   DEL [filename]  >=  Deletes the file [filename].
+   TYPE [filename] >=  Download the ASCII-file [filename] from the BBS.  The
+                       file is divided into pages, if you use paging when
+                       in BBS mode.  The file must be in your current
+                       directory.
+   GET  [filename] >=  Identical to TYPE, but always without paging, the
+                       file is always ended with a CTRL-Z.
+   PUT [filename]  >=  Use this command to upload an ASCII-file to this
+                       directory.
+############################################################################
+# New in 5.15b:
+   BPUT and BGET   >=  Use for upload or download of files via radio with 
+                       AUTOBIN protocol.
+   YPUT and YGET   >=  These are identical to PUT and GET, but uses the 
+                       YAPP protocol for binary transfer.  Except:
+                       Via telephone modem YGET can be used to download
+                       files with YMODEM, YMODEM BATCH or YMODEM-G.
+############################################################################
+   XPUT and XGET   >=  These are identical to YPUT and YGET, but uses the
+                       XMODEM protocol for binary transfer.  Only for
+                       telephone modem.
+############################################################################
+# New in 5.15b:
+   X1GET           >=  As XGET, but with 1K-XMODEM protocol.
+   ZGET            >=  As XGET, but with ZMODEM protocol.
+############################################################################
+   EDIT [filename] >=  This is a small editor for editing texts and files
+                       in the BBS.  You can use this editor ONLY on files
+                       that YOU have uploaded to the BBS.  Get more info
+                       with ? EDIT
+   F B EXIT QUIT   >=  Use one of these to go back from FBBDOS to BBS-mode.
+   O               >=  Use this to set 'options' like in BBS mode.
+   LIST            >=  Same as DIR, but shows also descriptions of files, if
+                       users have provided such an description.
+   PRIV            >=  Gives authorized users access to a special directory.
+   VIEW            >=  See the contents of an archived file like *.ZIP, *.LZH
+                       etc.           VIEW filename.ext
+   NEW             >=  List all new files since you last sent NEW
+
+@@ 14 E|EU
+
+This command is only for sysop and remote sysop.
+EU [callsign]  to edit a user.
+E [msg#]       to edit a message.
+
+@@ 14 F
+
+F - command gives you access to SERVER mode and special commands.
+    In 'server mode' you can do several things:
+    Get statistics of the use of this mailbox.
+    Read documentation of different kind.
+    Read info on all users of this mailbox.
+    Calculate QTH locator and distances between several QTH locators.
+    Calculate trajectory of different sattellites.
+
+For more information, type ? when you have entered SERVER mode.  For
+detailed information, type ? [command].
+
+@@ 14 FUNCTION
+
+Here is an overview of all function keys:
+
+For WinFBB:
+F1     -  Help.
+F2     -  Connect to the BBS locally with the console-callsign.
+F3     -  Disconnect a channel.
+F4     -  Start or stop forwarding.  Shows how many and the size of messages
+          that are waiting to be forwarded right now (real time).
+F5     -  Toggle monitoring on/off.
+F6     -  Change console-callsign.  That callsign is used when connecting to
+          the BBS with F2 or via gateway F9.  The callsign have SYSOP status.
+F7     -  Program TNC directly.
+F8     -  Not used
+F9     -  Gateway, using console callsign.
+F10    -  Talk to the user that has sent a T or initiate a chat with a user.
+
+ALT-F1 -  Not used
+ALT-F2 -  Not used
+ALT-F3 -  Start or stop forward scan.
+ALT-F4 -  Quit FBB.
+ALT-F5 -  Start a texteditor (use F1 for help).
+ALT-F6 -  Not used
+ALT-F7 -  Shows last connections.
+ALT-F8 -  Not used
+ALT-F9 -  Not used
+ALT-F10-  Not used
+
+############################################################################
+# New in 5.15:
+ALT-B  -  Not used
+ALT-D  -  Not used
+ALT-R  -  Not used
+ALT-S  -  Not used
+ALT-X  -  Not used
+############################################################################
+
+CTRL F1 to CTRL F10 holds pre defined texts, which are sent when pressing
+          that key.  The texts are in the file MEMO.SYS.  Works only in
+          the editor.
+          Exceptions:
+          CTRL-F1 and CTRL-10 are captured by Windows.
+          CTRL-F4 exits the editor.
+
+For DosFBB:
+
+F1     -  General help on all function keys.
+F2     -  Connect to the BBS locally with the console callsign.
+F3     -  Disconnect a channel.
+F4     -  Start or stop forwarding.
+F5     -  Toggle monitoring on/off.  With monitor on, the lower part of
+          the screen displays the monitored traffic, while the upper part of
+          the screen shows traffic in the BBS.  The number of lines in upper/
+          lower part of the screen can be adjusted with the arrow up or
+          arrow down keys.
+F6     -  Change console callsign.  That callsign is used when connecting to
+          the BBS with F2 or via gateway F9.  The callsign has SYSOP status.
+F7     -  Program TNC directly.
+F8     -  Reboot PC.  Can be done at once, or when all channels are free.
+F9     -  Gateway, using console callsign.
+F10    -  Talk to the user that has sent a T or initiate a chat with a user.
+
+ALT-F1 -  Shows pending forward(s).  Shows number of personal messages,
+          bulletins, and the total amount of kB waiting to be forwarded.
+ALT-F2 -  Shows all callsigns that are connected to the BBS.
+ALT-F3 -  Start or stop forward scan.
+ALT-F4 -  Shows the last connected callsigns.
+ALT-F5 -  Starts a very simple text editor, (use F1 for help).
+ALT-F6 -  Various 'options' :  Sysop is in ?
+                               Beep at connect ?
+                               Show callsigns etc. on every channel ?
+                               Gateway allowed ?
+                               Justification ?
+ALT-F7 -  Import messages from file.
+ALT-F8 -  Export messages to file.  Messages that are waiting to be
+          forwarded to one BBS, can be forwarded to a file.
+ALT-F9 -  Exit to DOS.  The BBS is halted during that time.
+ALT-F10-  Stop the mailbox program.  Can be done at once, or when all
+          channels are clear.
+
+############################################################################
+# New in 5.15:
+ALT-B  -  Blank screen.
+ALT-D  -  Save scroll buffer.
+ALT-R  -  Redisplay screen.
+ALT-S  -  Show last DOS screen.  Press a key to return to the BBS.
+ALT-X  -  Stop the BBS (same as ALT-F10).
+############################################################################
+
+CTRL-F1 to CTRL-F10 holds pre defined texts, which are sent when pressing
+          that key.  The texts are in the file MEMO.SYS.
+
+@@ 14 G|GATEWAY
+
+G - command gives you access to the GATEWAY (if the BBS allows gateway),
+    if there is a channel available on the gateway port).
+
+@@ 14 H|HELP
+
+List of available commands:
+A : Abort      - Abort listing.
+B : Bye        - Log off the BBS.
+C : Conference - Access to conference.
+D : DOS        - Access to FBBDOS, or to download a file.
+F : FBB        - Access to the server mode.
+G : Gateway    - Access to the other frequences by 'gateway'.
+H : Help       - Help.
+I : Info       - Information about the system.
+J : Jheard     - List of the last few connected stations.
+K : Kill       - Kill messages.
+L : List       - List messages.
+M : Make       - Copy a message to a file.
+N : Name       - Change your name.
+NZ: Zip        - State your zipcode.
+NH: homeBBS    - Type your homeBBS.
+O : Option     - Select options (paging, language, list/read personal etc).
+PS: Servers    - Show which servers are available in this BBS.
+PG: Program    - Run (show) certain DOS programs.
+R : Read       - Read messages.
+S : Send       - Send messages.
+T : Talk       - Talk to SYSOP.
+U : Upload     - Upload a file to the BBS.
+V : Verbose    - Verbose read of messages (like R, but with forwarding
+                 headers).
+W : What       - Which files are available.
+X : Expert     - Change between Normal and Expert.
+Y : Yapp       - Transfer binary files with the Yapp transfer protocol.
+Z : Delete     - Delete a file.
++ : Append     - Only for sysops:  Append a file after a message.
+> : Send text  - To send a text to another station connected to the BBS.
+= : Connect    - To connect another station connected to the BBS.
+! : Info       - Short version of the I command.
+$$ : Forwarded - Only for sysop: Show which BBSs will receive, or
+                 already have received a message.
+* : Wildcard   - Many possibilities, like @,?,#,=,*
+
+For detailed help on each command, type ? [command].
+#########################################################################
+# WP-info new in 5.15
+@@ 14 I|IH|IQ|IN|IL|IZ|I@|INFO
+
+I - command gives you information about this BBS.
+
+For White Pages:
+I (call)    - Gives WP info on this callsign.
+ID          - Gives number of records in WP.
+IH zone     - Look for users in zone (EU, NOR etc).
+IN (string) - Gives WP records with 'string' in name.
+IQ (string) - Gives WP records with 'string' in QTH.
+IZ (zip)    - Look for users with specific zipcode.
+I@ (bbs)    - Look for users of that BBS.
+
+In most WP commands, 'wildcards' are allowed.
+#########################################################################
+
+@@ 14 J|JA|JB|J1|J2|JK
+
+J-command sends you a list of the last connected stations.
+- Type JK to see the last connected stations.
+- Type JA to see callsigns that have connected to TNC A.
+- Type J1 to see callsigns that have been MONITORED on TNC A.
+- Type JB to see callsigns that have connected to TNC B.
+- Type J2 to see callsigns that have been MONITORED on TNC B.
+  and so on...
+
+@@ 14 K|KILL|KM|KK
+
+K-command is for killing messages TO or FROM you.
+- Type K[space][message#] to delete one paticular message.
+- Type KM to delete all messages to you, that you have read [Kill Mine].
+  This command will NOT kill messages that you have not read!
+
+PS :    You cannot delete messages that are not TO you or FROM you, only
+        the SYSOP can do that..
+
+SYSOP:  In front of K commands, you can put an extra K, like KKM, KKF etc.
+        In that manner the messages will get A status (normally K) at once.
+
+@@ 14 L|LIST|LB|LM|LN|LL|LS|L<|L>|L@|LU|LR|LC|LD>|LD<|LA|LF|LK|LP|LX
+
+L command LISTS all messages in the mailbox.
+  L  lists all new messages since you last issued a L command.
+  LA lists messages with A status
+  LB lists only bulletins.
+  LC for very special listings.  See further down...
+  LD< YYMMDD list all messages received before the specified date.
+  LD> YYMMDD list all messages received after the specified date.
+  LE lists messages that could not be forwarded.
+  LF lists messages that have been forwarded.
+  LH lists held messages.
+  LK lists all killed messages
+  LM lists all messages TO YOU [List Mine].
+  LN lists all UNREAD messages to you [List New].
+  LL 10 lists the last 10 messages in the mailbox [List Last].
+  LP list personal messages.
+  LS [Text] lists messages with [text] in the subject.
+  LT lists NTS Traffic messages
+  LX lists messages with status X.
+  LY lists messages that have been read (status Y)
+  L< [callsign] lists messages FROM [callsign].
+  L> [callsign] lists messages TO [callsign].
+  L$ lists bulletins with status $
+  L@ lists local bulletins with no @BBS-field.
+  L@ [callsign] lists messages @[callsign].
+  L  [message#]- lists ONLY messages with higher number than [messages#].
+  L  [message#]-[message#] lists all messages between these numbers.
+  LU lists all UNREAD messages (status N) to and from you.
+  LR lists messages in revers order, starting with the oldest one.
+     LR can replace L in most contexts (ex: LR 1-100)
+
+Examples:
+- To list messages over #325, type L 325-
+- To list messages from #300 to #350, type L 300-350
+
+PS:  Check number of active messages before doing a list command, to avoid
+     listing every messages in the system.  This is easy to check with the
+     V-command.
+
+Special command LC:
+With this command you can have very special listings.  If you once type
+LC DX, then all list command (except LM and LN) will only list messages
+with a TO field of DX.  If you type LC *DX*, listings will contain all
+'To' fields that have DX in it, for example VHFDX, DXHF etc.
+To go back to 'normal', send LC *
+LC ? or LC ; gives a list of available LC fileds.
+
+
+@@ 14 M|MH|MV|MA|MVA|MHA
+
+M [number] [name]  :  Copy a message to file.
+MH [number] [name] :  Same, but in same format as R (msg#).
+MV [number] [name] :  Same, but in same format as V (msg#).
+These commands will overwrite old messages.
+
+MA [number] [name] :  Copy a message to file.
+MHA [number] [name]:  Same, but in same format as R (msg#).
+MVA [number] [name]:  Same, but in same format as V (msg#).
+These commands do NOT overwrite old messages, but append the next text to
+the old file.
+
+Only for sysops;  M can be used instead of L.  The listing then will have
+                  the BID included in the subject.
+
+@@ 14 N|NAME
+
+N command is used to enter (or later change) your name in the BBS.  You
+can use max 12 characters.  'Phoney' names will be deleted, use your own
+first name.
+
+- Type N[space][first-name]
+
+See also help with NP, NL, NQ, NZ, NH.
+
+@@ 14 NH|HOMEBBS
+
+Use this command to state your home BBS.
+
+@@ 14 NP
+
+This command is for changing your password for access to the modem port.
+
+########################################################################
+# Changed in 5.15 from NQ to NL.  New NQ is city.
+@@ 14 NL
+
+Use this command to enter (or change) your QTH locator.
+
+@@ 14 NQ
+
+Use this command to enter (or change) your city.
+########################################################################
+
+@@ 14 NEWDOC
+
+NEWDOC is a server for entering new information/documentation in the DOCS
+server.  To enter a file here, send a personal message like this:
+
+#############################################################################
+# New in 5.15:
+NEWDOC can now also make new directories.
+#############################################################################
+
+SP NEWDOC @ (bbs)
+
+The subject must hold 2 things:  First it must contain the filename,
+complete with path (if needed), followed by a label that describes the file.
+Example:
+
+BBS.DOC Documentation for this BBS.
+
+The message will then become the file.  After you have sent such a message
+using NEWDOC, the BBS will send you a message to confirm that the file
+was successfully saved under DOCS.
+
+Sysop can change the label with command L in DOCS server.
+
+@@ 14 NZ|ZIP
+
+Use this command to state your ZIP code.
+
+@@ 14 O|OP|OR|OL|ON
+
+O command gives you different options:
+O alone shows you what language you are using, paging and base number.
+- Type OP to toggle paging on messages.
+- Type OP [number-of-lines] to select paging with a specific number of
+  lines per page.
+- Type OL alone to get a list of available languages.
+- Type OL[space][language-number] to choose a language.
+- Type ON alone to see your base number.
+- Type ON [number] to choose a new base-number.  The number you type, will
+  be multiplied by 1000, so if you type ON 54, your base number will be 54000.
+  After that, you can type R 25 to read message number 54025.
+  It is also allowed to type ON 54000.
+- Type OR to choose if you want to be able to list and read all personal
+  messages in the BBS (if your BBS allows this...).
+- Type OM to choose if you want to receive the list of new messages at
+  every connect.
+
+@@ 14 P|PR
+
+Only for sysops:  Use PR to toggle printer on/off.
+
+@@ 14 PS
+
+Use this command (PS) to see which servers are available in this BBS.
+
+@@ 14 PG
+
+Send command PG to list available DOS programs.  Run one DOS program with
+command
+PG (program name) (parameter)
+
+@@ 14 R|RM|RN|RU|R>|R<
+
+R-command is for reading messages (not files).
+- Type R[space][message#] to read one message.
+  You can chain several message#, seperated by a space.
+- Type RM to read ALL messages adressed to you [Read Mine].
+- Type RN to read all NEW messages to you [Read New].
+- Type RU to read all UNREAD messages (status N) to or from you.
+- Type R< to read messages from a certain callsign.
+- Type R> to read messages to a certain callsign.
+
+#############################################################################
+# New in 5.15
+- When you read many different messages after each other (with paging),
+  you can now send N to skip directly to next page, C to continue without
+  paging, or A for Abort or ENTER to continue with next page.
+##############################################################################
+
+@@ 14 REQCFG
+
+REQCFG lets you 'order' a file from another BBS, showing the configuration
+of that BBS.
+
+If you want to order the file from LA1B BBS,
+and your HomeBBS is F6FBB, you send a message like this:
+SP REQCFG @ LA1B
+As subject you type an @-sign and your HomeBBS.  Like this:
+@ F6FBB              (if F6FBB is your HomeBBS).
+The message can be empty, a CTRL-Z or /EX is enough.
+
+After some time, when the message has had time to be forwarded to 
+LA1B BBS, you will receive a message here at this BBS containing the
+requested file.
+
+Beware:  Not all BBS types support REQCFG.  FBB does...
+
+@@ 14 REQDIR
+
+REQDIR lets you 'order' a list of available files from another BBS.
+Then, later, you can "order" one of those files with REQFIL.  Type
+? REQFIL for more info on the REQFIL server.
+
+If you want to see which files are in the root directory of LA1B BBS, and
+your own BBS if F6FBB, you send a message like this:
+SP REQDIR @ LA1B
+As subject you write 
+*.* @ F6FBB  (if F6FBB is your home BBS)
+The message can be empty, a CTRL-Z or /EX is enough.
+
+After some time, when the message has had time to be forwarded to
+LA1B BBS, you will receive a message here in this BBS containing a list
+of files available in the root directory of LA1B BBS.
+
+If you want to look in one subdirectory ( <DIR> ), you can do this in a
+similar way.  Example:  If you want to look in the LOKALT-directory at 
+LA1B, you send a message like this:
+SP REQDIR @ LA1B
+As subject you type
+LOKALT/*.* @ F6FBB  (if F6FBB is your HomeBBS).
+
+Beware:  Not all BBS types support REQDIR.  FBB and MBL type BBSs do...
+
+@@ 14 REQFIL
+
+REQFIL lets you 'order' a file from another BBS.  Only ASCII files
+can be ordered, binary files cannot be sent to you with REQFIL.
+A list of available files can be obtained using the REQDIR server.
+
+If you want to order a file from the root directory of LA1B BBS,
+and your HomeBBS is F6FBB, you send a message like this:
+SP REQFIL @ LA1B
+As subject you type the name of the requested file, followed by a @-sign
+and your HomeBBS.  Like this:
+NORSK.MAN @ F6FBB              (if F6FBB is your home-BBS).
+The message can be empty, a CTRL-Z or /EX is enough.
+
+After some time, when the message has had time to be forwarded to
+LA1B BBS, you will receive a message here in this BBS containing the
+requested file.
+
+If you want to order a file from a subdirectory, ( <DIR> ), you do
+this is in a similar way.  Example:  If you want to order the file
+TEST.TST in subdir called LOKALT, you type:
+SP REQFIL @ LA1B
+As subject you type:
+LOKALT/TEST.TST @ F6FBB   (if F6FBB is your HomeBBS)
+
+Beware:  Not all BBS types support REQFIL.  FBB and MBL type BBSs do...
+
+@@ 14 S|SB|SR|SC|SP|SC
+
+S command lets you send messages.
+- Type S[type][space][callsign] to send a message.
+  Type can be P for Personal or B for Bulletin.
+- Type S[type][space][callsign] @ [callsign] to send a message to a
+  station at another BBS.
+- Type SB ALL to send a bulletin to ALL.
+- Type SR[space][messages#] to reply to a paticular message.  (Send Reply).
+- Type SC[space][messages#][space][callsign] to send a copy of a message
+  to another callsign. (Send Copy).  You can write a message before
+  sending the CTRL-Z, then the copy will be appended to your text.  If
+  you don't want to do this, just send CTRL-Z instead of any text.
+
+@@ 14 SYS
+
+  Only for sysops.  Use the SYS command to become a remote sysops.
+
+#############################################################################
+# New in 5.15:
+  Sysop can send   ! (password) directly.  Careful....!
+##############################################################################
+
+
+@@ 14 SYSOP
+
+These commands are available for sysop (local and remote):
+
+DOS               :  SYSOP can now run DOS programs from remote.  Read the
+                     help for this under FBBDOS with command ? DOS.
+DU [callsign]     :  Show info on that callsign.
+DB                :  List all callsigns defined as BBS.
+DE                :  List all excluded callsigns.
+DL                :  List all Local users.
+DM                :  List all users with modem access.
+DS                :  List all sysops.
+DX                :  List all 'expert' users.
+DP                :  List all users that have paging on.
+E [msg#]          :  Edit a message #.
+EU [callsign]     :  Edit one user.  A '.' deletes a field.
+FA [msg#] [BBS]   :  Mark message# for forward to a BBS.
+FB (BBS)          :  List messages that will be forwarded to a BBS.  The
+                     messages are listed as with a standard L command with
+                     BIDs (M command).
+FC (BBS)          :  Shows the route a message from me to a BBS will take.  If
+                     I send FC LA2D, and the BBS respond with LA8D, it means
+                     that messages from me to @LA2D, will be sent via LA8D.
+FD [msg#] [BBS]   :  Remove message# from forward to BBS.
+#############################################################################
+# New in 5.15b:
+FG                :  Shows partly-received messages (forward resume).
+#############################################################################
+#############################################################################
+# New in 5.15:
+FH (BBS)          :  Show H route to that BBS.
+FI (BID)          :  Gives information on one BID.
+FI (BID) +        :  Add a BID to the list.
+FI (BID) -        :  Remove a BID from the list.
+############################################################################
+FL (BBS)          :  List messages that will be forwarded to BBS.
+#############################################################################
+# New in 5.15:
+FP < (call)       :  Show if from-call is changed (SWAPP.SYS).
+FP > (call)       :  Show if to-call is changed (SWAPP.SYS).
+FP @ (route)      :  Show if routing is changed (SWAPP.SYS).
+#############################################################################
+FT [BBS]          :  List size of messages ready for forward to BBS.  Shows
+                     number of personal messages and bulletins, and also the
+                     total size in kilobytes.  In real time.
+FT                :  FT alone shows the same as above, but for ALL BBSs that
+                     there pending forwards to.  In real time.
+FU [number]       :  To disconnect a user from a channel.  Channel-number
+                     must be used, not callsign.
+FV                :  Start forward scan.
+FN [messsage#]    :  List BBSs waiting for a message.
+FW [argument]     :  Start forward to BBS (callsign) or port.
+                     FW 9 starts forward out on all ports.  FW LA1B starts
+                     forward to LA1B.
+FS [argument]     :  Stop forward.  Argument; look under FW.
+FR [argument]     :  Start revers forward.  Argument; look under FW.
+HO [msg#]         :  Hold messages, give them H-status.
+##############################################################################
+# new in 5.15
+IL (call)         :  (WP)  Gives full information on user, both primary and
+                           secondary info.
+IE (call)         :  (WP)  To edit a users data in WP.
+##############################################################################
+$$ [message#]     :  Same as FN.
+K [message#]      :  From version 5.10i sysop can also kill UNREAD messages.
+KF                :  Kill all messages that have been forwarded.
+KK [message#]     :  Kill message.  Goes directly to status A, and is 
+                     deleted with next EPURMESS.
+K> [callsign]
+K< [callsign]     :  SYSOP can kill messages to or from a callsign.
+K@ [BBS]          :  Kill all messages to this @BBS route.
+LABEL (filename)  :  To change the description of a file in FBBDOS.
+N (callsign)      :  To change a user's data in USER DATA.
+
+NB:  All K commands can be preceded by an extra K.  Messages will then go
+     directly to A status (not K).  Example:  KKM
+
+LU                :  List all UNREAD messages (status N) in the BBS.
+M (replace L)     :  Can be used by sysop to replace L, like:
+                     ML for LL, M 100- for L 100- etc.  All listings will
+                     then have the BID in the subject-field.
+M [msg#] [file]   :  Copy a message to a file.  Overwrites existing file.
+MH [msg#] [file]  :  Like M, but with same format as R [msg#].  Overwrites.
+MV [msg#] [file]  :  Like M, but with same format as V [msg#].  Overwrites.
+MA [msg#] [file]  :  Copy a message to a file.  Appends to existing file.
+MHA [msg#] [file] :  Like M, but with same format as R [msg#].  Appends.
+MVA [msg#] [file] :  Like M, but with same format as V [msg#].  Appends.
+PR                :  Toggle printer on/off.  CAREFUL when doing this remote
+##############################################################################
+# New in 5.15:
+PR (msg#) (msg#)   :  Print messages on printer.
+PRV (msg#) (msg#)  :  Print messages (verbose format) on printer.
+PR> (filename)     :  Redirect printer to file.
+PR> -              :  Cancel redirect of printer.
+##############################################################################
+N (call)          :  To change user data under DATA OM (INF.SYS).
+RE                :  REview messages with status Hold.
+RU                :  Read all UNREAD messages in the BBS.
+SYS               :  Send this command to become remote sysop.
+S [filename]      :  Send an ASCII file in GATEWAY mode.  Must go to command
+                     mode first (by pressing ESC).
+##############################################################################
+# New in 5.15:
+SR with filename  :  Sysop can now include filname in SR message.
+                     Format:  SR (number) (+filename) (title)
+##############################################################################
+W (filename)      :  To be used under GATEWAY to capture text in a file.  You
+                     must first change to Cmd: mode.  End capture with W.
+YL [filename]     :  Change the label of a YAPP file.
+YZ [filename]     :  Delete a YAPP file.
+YU [filename]     :  Send a binary file in GATEWAY mode.  Must go to command
+                     mode first (by pressing ESC).
+YD [filename]     :  Receive a binary file in GATEWAY mode.  Must go to
+                     command- mode first (by pressing ESC).
+
+%                 :  Show status for all channels right now.
+/A                :  Stops the BBS program
+##############################################################################
+# New in 5.15b:
+/K                :  Reboot BBS, including 'house-keeping'.
+/L                :  Reboot BBS, wait until all have disconnected.
+/M                :  Reboot BBS, immediately.
+##############################################################################
+/R                :  Reboot PC.
+
+
+@@ 14 T|TALK
+
+T command calls the BBS System Operator (SysOp).
+If SysOp IS available to chat, you'll get a response within ONE MINUTE.
+Otherwise, the BBS will advise you that SysOp did not answer.  You will be
+returned to the command prompt and can continue normally.
+
+@@ 14 TH
+
+Gives access to the themes zone.  Lists messages by themes, as setup
+in the file THEMES.SYS.  Available commands in this zone, are
+H (list themes)
+L (list messages in current theme)
+R msg# (read message in current theme)
+  number (change to theme#)
+
+
+@@ 14 U|UPLOAD
+
+U command can be used to upload an ASCII-file to the 'root' directory of 
+the FBBDOS.  - Type U [filename] to send the ASCII-file.
+You can also use U command to upload a file to a subdirectory of FBBDOS, 
+like this:
+U VHF/TEST.RES
+
+@@ 14 V|VERSION|VERBOSE|VM|VN
+
+The V command shows you the specific version of this PBBS, the date
+of the software release and the copyright notice.  This also shows the
+number of active messages and the next message number.
+- Type V to see this PBBS's software version.
+
+The V-command also lets you READ MESSAGES with a verbose listing,
+which includes the message routing.  Use like R-commands.
+
+- Type V[space][message#] to READ a specific message.
+  You may have several message numbers per line.
+- Type VM to READ ALL messages addressed to YOU [Read Mine].
+- Type VN to READ ALL NEW messages addressed to YOU [Read New].
+- To READ msgs #313 and #325 type 'V 313 325'.  Don't forget SPACE.
+
+##############################################################################
+# New in 5.15
+- When you read many different messages after each other (with paging),
+  you can now send N to skip directly to next page, C to continue without
+  paging, or A for Abort or ENTER to continue with next page.
+##############################################################################
+
+@@ 14 W
+
+Use the W command (alone) to get a list of files in the users root-directory.
+Use the W command with path to see what is in the sub-directories, like this:
+W LOCAL           (see what is in the LOCAL subdirectory)
+
+#############################################################################
+# New in 5.15
+@@ 14 WP
+
+Check help on WP commands with the command    ? I
+
+Ask for WP info from another WP-server by sending a message like this:
+
+SP WP @ LA1B
+WP query                   (Any title...)
+F6FBB ?                    (send info on F6FBB)
+LA6CU ?                    (Send info on LA6CU)
+Terminate by /EX
+#############################################################################
+
+@@ 14 WILDCARDS|@|?|#|=|*
+
+The following "wildcards" are allowed:
+
+'@' replace one letter
+'?' replace one alfanumeric character (A-Z, a-z and 0-9)
+'#' replace one digit
+'=' replace any character, except space
+'*' replace any string of characters
+##############################################################################
+# New in 5.15
+'&' look for a period (.), or the end of the string.
+    Ex:   *.FRA& will match  xxxxx.FRA and xxxxx.FRA.xxxxx, but not
+    xxxxx.FRANCA or xxxxx.FRANCA.xxxxxx
+##############################################################################
+
+@@ 14 X|EXPERT
+
+The X-command toggles your status between 'normal' and 'eXpert' user.
+'Normal' mode gives you complete prompts and standard messages.
+'eXpert' mode gives you a very short command line and nothing else.
+- Type X to toggle your status between 'normal' and 'eXpert'.
+
+@@ 14 Y|YAPP|YW|YI|YN|YU|YD|YZ
+
+The Y command calls YAPP protocol for binary file transfer.
+
+Your software must use YAPP protocol to transfer binary files.
+
+- Type YW to list directory of binary files.
+- Type YI to list directory with labels.
+- Type YN to list directory of new binary files since your last logon.
+- Type YU [filename] to send a file TO the BBS. You can't replace an
+  existing file.
+- Type YD [filename] to receive a file FROM the BBS.
+- Type YZ [filename] to delete a file from the BBS.
+
+@@ 14 Z
+
+Use the Z command to for delete files in the BBS from BBS mode.
+Type Z [filname] to delete the file.  
+
+@@ 14 +|APPEND
+
+- Only for sysops.  Use this to append a file after the message, like this:
+  SP [call] @ [bbs] + [filename and path]
+  Example:
+  SP LA6CU @ LA1B + c:\lokalt\lokal.inf
+  Here the file LOKAL.INF vil be appended behind the message when you
+  type CTRL-Z.
+
+@@ 14 >
+
+- Send  > [callsign] [text]   to send a text to another station that also
+  is connected to the BBS.  Get an overview of connected stations with
+  the !-command.
+  This command is not allowed in read-only mode.
+
+@@ 14 =
+
+- Send = [callsign] to connect to another station that also is connected
+  to the BBS.  Get an overview of connected stations with the ! command.
+  This command is not allowed in read-only mode.
+  
+@@ 14 !
+
+- This command is similar to the I command, but in a shorter form.
+
+@@ 14 $$
+
+Only for sysops: $$ [message#] gives a list of all BBSs that the message
+                  has been forwarded to, or is waiting to be forwarded to.
+
+@@ 14 %
+
+Use this command to see the status of all channels in the BBS right now.
+
+#############################################################################
+# GATEWAY is 16 #
+#############################################################################
+
+@@ 16 H
+
+Gateway commands:
+
+C  : Connect.
+D  : Disconnect.
+F  : Frequency selection (on PACTOR mode)
+H  : Help (this text).
+J  : List of the last 20 monitored stations.
+K  : Converse mode.
+M  : Monitor on/off. Monitor the port.
+P  : Go directly from one port to another.
+     i.e. Send P1 to go from current port to port 1.
+Q  : Return to BBS mode.
+CQ : CQ command (bare for PACTOR !).
+
+> or ESC to go back to Cmd: mode.
+
+First, you get an available port. If a link is not busy, it will be assigned
+and take your callsign.  The mode will automatically change to converse when
+connecting your correspondent.  The K command also changes to converse mode.
+You will return to command mode when disconnecting, or with Esc or > followed
+by a <return>.  The C command must be followed by a callsign, and if necessary
+by the V and a list of repeaters.
+C callsign V digi1 digi2 ...
+
+Monitor the port with the M command
+
+@@ 16 B|Q
+
+Send Q to return to BBS mode.  If you are connected to a station via the
+gateway, the other station will be disconnected.
+
+(All commands in gateway mode must be sent in Cmd: mode.  Enter Cmd: mode by
+sending a > (or press ESC) and press ENTER.)
+
+@@ 16 C
+
+Send C (callsign) to connect to a station via the gateway.
+
+(All commands in gateway mode must be sent in Cmd: mode.  Enter Cmd: mode by
+sending a > (or press ESC) and press ENTER.)
+
+@@ 16 D
+
+Send D to disconnect a station via the gateway.
+
+(All commands in gateway mode must be sent in Cmd: mode.  Enter Cmd: mode by
+sending a > (or press ESC) and press ENTER.)
+
+@@ 16 F
+
+Send F (only for PACTOR) to get a list of available frequencies.
+Set the frequency by sending the number that precedes the frequency.
+
+@@ 16 J
+
+Send J to list the last 20 monitored stations.
+
+(All commands in gateway mode must be sent in Cmd: mode.  Enter Cmd: mode by
+sending a > (or press ESC) and press ENTER.)
+
+@@ 16 K
+
+Send K to enter CONVERS mode.
+
+(All commands in gateway mode must be sent in Cmd: mode.  Enter Cmd: mode by
+sending a > (or press ESC) and press ENTER.)
+
+@@ 16 M
+
+Send M to toggle monitoring via gateway on/off.
+
+(All commands in gateway mode must be sent in Cmd: mode.  Enter Cmd: mode by
+sending a > (or press ESC) and press ENTER.)
+
+@@ 16 P
+
+Send P (port number) to go directly from one port to another.
+
+(All commands in gateway mode must be sent in Cmd: mode.  Enter Cmd: mode by
+sending a > (or press ESC) and press ENTER.)
+
+@@ 16 >
+
+Send > (or press ESC) and press ENTER to go to Cmd: mode.
+
+(All commands in gateway mode must be sent in Cmd: mode.  Enter Cmd: mode by
+sending a > (or press ESC) and press ENTER.)

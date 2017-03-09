@@ -1,0 +1,439 @@
+##############################
+#   Textes francais (V1.1)   #
+#   Pour F6FBB BBS (V5.15b)  #
+#                            #
+#   Version non accentuee    #
+# adaptee de G7EVY @ GB7EVY  #
+#     par F6FBB @ F6FBB      #
+##############################
+#
+##############################################################
+# NOTA:                                                      #
+# ~~~~~                                                      #
+# La longueur des lignes ne doit pas depasser 255 caracteres #
+# L'ordre des lignes ne doit pas etre modifie                #
+# Seules des lignes commentaires (commancant par un '#'      #
+# peuvent etre ajoutees ou enlevees                          #
+#                                                            #
+##############################################################
+#
+#
+# LANGUAGE, REPONSES, FORMATS (DATE, POINTS CARDINAUX)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+Francais
+OL: Le langage selectionne est      : Francais$W
+Oui
+Non
+DimLunMarMerJeuVenSam
+JanFevMarAvrMaiJuiJulAouSepOctNovDec
+Nord
+Sud
+Est
+Ouest
+#
+# T_MES (MESSAGES DE BIENVENUE)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# BBS, EXPERT, NON-EXPERT
+#
+OK $I - %l Msg(s) - %k KB$W
+$WBonjour $I.$W
+$WBonjour $I, Bienvenue a $c.$WTapez ? <CR> pour avoir de l'aide.$W
+#
+# INFOS NOM, QTH, HOME-BBS, CODE-POSTAL
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+$WSVP entrez votre prenom         : N  (prenom).
+$WSVP entrez votre QTH            : NQ (ville).
+$WSVP entrez votre BBS habituelle : NH (Home-BBS).
+$WSVP entrez votre code postal    : NZ (code postal).$W$W
+#
+# MESSAGE POUR LES INVITES
+# ~~~~~~~~~~~~~~~~~~~~~~~~
+#
+Vous avez un acces limite sur ce port.$W$W$=:$O>$W
+#
+# RESPONSE TO NON-BBS ON "BBS ONLY" PORT
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+#Desole, acces reserve aux BBS sur ce port.$W
+Desole, La messagerie F6FBB est arretee.$W
+#
+# MESSAGES DE CONNEXION
+# ~~~~~~~~~~~~~~~~~~~~~
+#
+$WC'est votre premiere connexion sur cette messagerie.$W$O est situe a $c, $?.$WVous avez $0 message(s) nouveau(x).$W
+$WIl y a $0 message(s) nouveau(x). RN pour le(s) lire.$W
+$WIl y a $0 message(s) que vous avez lu(s) mais pas supprime(s).$W
+Vous etes reste connecte $: - Temps CPU : $.$W73 de $O.$W
+#
+# REPONSE A LA COMMANDE !
+# ~~~~~~~~~~~~~~~~~~~~~~~
+#
+$WBBS et Serveur par F6FBB V$E$W$Wcanaux:$W$% $W$N messages actifs - Dernier message $L - Dernier message liste $Z.$WMessages nouveaux pour:$W$Q$W$WVotre selection de message est $l.$WTemps de connexion : $: - Temps CPU : $.$W
+#
+# T_QST (QUESTIONS ET REPONSES STANDARDS)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+<CR> Continue <A>rret <C>ontinue sans pagination <N> Message suivant ..>
+Modification (O/N) ?
+Merci!$W
+$WAbandon!$W
+Creation (O/N) ?
+$WVotre choix (L=Liste, F=Fin) :
+<CR> Continue <A>rret <R #> Lire Message # ..>
+#
+# T_ERR (MESSAGES D'ERREUR)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+*** Erreur : Reponse erronnee.$W
+*** Erreur : La commande $0 est incorrecte, $I.$W
+*** Erreur : Il manque un espace ou un caractere apres la commande, $I.$W
+*** Erreur : Seule une reponse numerique est autorisee, $I.$W
+*** Erreur : Il manque le texte apres l'indicatif, $I.$W
+*** Desole : Il n'y a pas d'aide disponible pour $0.$W
+*** Erreur : Il manque l'indicatif de l'autre station, $I.$W
+*** Erreur : Il manque l'indicatif $I.$W
+*** Erreur : Il n'y a pas de fichier de ce nom, $I.$W
+*** Erreur : Le caractere $0 n'est pas interprete, $I.$W
+*** Erreur : Le message #%M n'existe pas, $I.$W
+*** Erreur : Le fichier $f n'existe pas, $I.$W
+*** Erreur : Vous ne pouvez pas supprimer le message #%M, $I.$W
+*** Erreur : #%M n'existe pas, $I.$W
+*** Erreur : Ce port n'est pas valide, $I.$W
+*** Erreur : Utilisez la commande CD, $I.$W
+*** Erreur : Le champ $0 est trop long.$W
+*** Erreur : L'adresse $0 est erronnee.$W
+*** Desole, vous avez deja transfere %d KB.$W
+*** Desole : Pas trouve!$W
+*** Erreur : Il manque le nom de fichier.$W
+*** Erreur : Il manque le fichier destination.$W
+*** Erreur : Cette langue est inconnue, $I.$W
+*** Erreur : Impossible de modifier $f.$W
+*** Erreur : Le repertoire "$0" n'existe pas, ou n'est pas vide.$W
+*** Erreur : Il manque le repertoire, $I.$W
+*** Erreur : Impossible de creer le repertoire "$0".$W
+*** Erreur : Il manque le chemin d'acces, $I.$W
+*** Erreur : Le chemin d'acces est trop long, $I.$W
+*** Erreur : Ce chemin d'acces n'existe pas, $I.$W
+*** Erreur : Impossible de creer le fichier $f, desole $I.$W
+*** Depassement temps!$W
+#
+# T_MBL (MESSAGERIE)
+# ~~~~~~~~~~~~~~~~~~
+#
+# EXPERT, GUEST, NON-EXPERT PROMPTS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$W$*:$O>$W
+$W$*:$O (B,KM,LM,O,RM,S,T,?) >$W
+$W$*:$O (A,B,C,D,F,G,I,J,K,L,M,N,O,P,R,S,T,U,V,W,X,Y,Z,?) >$W
+#
+# TEXTES GENERAUX #1
+# ~~~~~~~~~~~~~~~~~~
+#
+Il n'y a pas de message.$W
+Il n'y a pas de message nouveau.$W
+Entrez le sujet:
+Entrez le message, (Fin avec /EX ou Ctrl-Z):$W
+Le message #%M a ete supprime.$W
+#
+# REPONSE A LA COMMANDE V
+# ~~~~~~~~~~~~~~~~~~~~~~~
+Logiciel F6FBB (V$E). $N messages actifs - Dernier message #$L.$W
+#
+# TEXTES GENERAUX #2
+# ~~~~~~~~~~~~~~~~~~
+Entrez votre prenom        :
+Merci $I.$W
+Indicatif Dern-Connex #Cnx  RPBSXLFEMUI Nom          Password     PRIV.$W
+$V n'est pas disponible, mais vous pouvez lui laisser un message.$W
+Attendez $I, j'appelle $V.$W
+$V n'est pas la mais vous pouvez lui laisser un message.$W
+$I, $V est au clavier:$W
+$W$I, $V voudrait vous parler.$W
+Vous etes maintenant en mode Expert.$W
+Vous etes maintenant en mode Normal.$W
+Vous etes en mode Serveur. Tapez F <return> pour revenir en mode BBS.$W
+Le fichier $f a ete copie.$W
+Le message pour %G a ete annule (erreur d'adresse ou pas de titre).$W
+OP: Pagination programmee a          : Devalidee$W
+OP: Pagination programmee a          : $p lignes$W
+L'utilisateur est connecte, l'edition est impossible.$W
+$0 $1 $2 $3 $j $K = $4'$5
+ON: Base Message programmee a        : $0$W
+(B)id, (F)=Exp, (V)ia, (T)=Dest, T(I)tre, (S)tatus, T(Y)pe, (CR) fin >$W
+$W(R)=Ts msg, (P)agination, (B)BS, (S)ysop, e(X)pert, (L)ocal, (E)xclus, (M)odem,$W(U)=Unpro Msg, lan(G)ue, (N)om, pass(W)ord, pri(V), (H)omeBBS, (Z)=Code-postal,$W(CR)=fin >$W
+L'indicatif $0 est inconnu, creation (O/N) ?
+$WSupression de $0 O/[N] ?
+Langues disponibles:$W
+($0):$1
+$W              ========== Fin du message #%M ==========$W$W
+#
+# REPONSE AUX COMMANDES $ (MESSAGE-#) OU FN (MESSAGE-#)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+Message #$0$W
+#
+# HEADER DE MESSAGE
+# ~~~~~~~~~~~~~~~~~
+#
+$WExpediteur  : %P$WDestinataire: %G$0$WType/status : $t$s$WDate/heure  : $j $K$WBid         : $R$WNb lectures : %C$W
+#
+# HEADER DE LISTES
+# ~~~~~~~~~~~~~~~~
+#
+#$WSelection des messages - [$l]$WMsg #  TSL  Dim  Pour   @ BBS  Exped  Date/Heure Sujet$W====== ===  ==== ===== ======= ====== ====/==== =======$W
+Msg #  TSD  Dim  Pour  @ BBS   Exped  Date/Heur Sujet     Selection = [$l]$W
+#
+# CONTENU DES LIGNES DE LISTES
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$M $t$s%r $n $G$0 $P $i $1$W
+#
+Message #   : %M$WTitre       : $S$W
+Bid (Mid)   : $R$W$W
+Routage vers
+$0-Routage via $v$W
+#
+# PROMPTS DU REVERSE FORWARDING, ET DU FORWARDING STANDARD
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+F>$W
+>$W
+#
+# MESSAGES DU FORWARDING
+# ~~~~~~~~~~~~~~~~~~~~~~
+NO - Wrong parameter.$W
+NO - BID$W
+OK $W
+*** Done$W
+#
+Taille: %n$W
+Pas de routage programme vers %A. Je previens le sysop.$W
+La reponse sera adressee a %G@$v.$W
+OR: Acces a tous les messages        : $0$W
+OM: Messages nouveaux a la connexion : $0$W
+Entrez votre BBS habituelle:
+Entrez votre code postal   :
+HomeBBS: $0      Code postal : $1$W
+Attention! Pas de WP-Routage connu pour %G$W
+$W$0 message(s) retenu(s)$W
+$W(A)rchive,(K)=Supp,(L)ocal,(Q)uitte,(R,V)=Lit,(U)=Valide, (CR) fin >$W
+Message retenu pour validation par le Sysop.$W
+#
+# T_TRT
+# ~~~~~
+#
+*** Occupe - Patientez SVP.$W
+*** Occupe - Connexion impossible.$W
+*** $0 n'est pas connecte.$W
+$W$B*** Connecte a $0 (Fin avec Ctrl-Z).$W
+*** Deconnecte.$W
+*** "Break"  de $0 ***$W
+*** Fin du "break" ***$W
+"Break" pour $0 envoye.$W
+Demande d'arret de $0. Code: $1$W
+Demande d'arret acceptee, connexions interdites.$W
+Demande de reset acceptee, re-initialisation en cours.$W
+################ Modifie pour 5.16 #########################
+<CR> Continue <A>rret ..>
+Demande d'arret rejetee.$W
+Vous etes en mode BBS. Tapez F <return> pour revenir en mode Serveur.$W
+#
+# T_MEN (MENU SERVEUR)
+# ~~~~~~~~~~~~~~~~~~~~
+#
+$WSERVEUR (C,D,N,Q,T,F,B,?) >
+$W 
+$W(C) Connexions-Stat.$W(D) Documentations$W(Q) Qra-Locator$W(N) Nomenclature$W(T) Trajecto. Satellites$W(F) Retour en mode BBS$W(B) Deconnexion$W$WSERVEUR (C,D,N,Q,T,F,B,?) >
+#
+# T_STA (MODULE STATISTIQUES)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+$WCONNEXIONS-STAT. (G,H,I,J,L,O,F,B,?) >
+$W
+$W(G) Generalites$W(H) Utilisation horaire$W(I) Liste des indicatifs$W(J) Utilisation par jours$W(L) Details$W(O) Pourcentages$W(F) Retour au serveur$W(B) Deconnexion$W$WCONNECTIONS-STAT. (G,H,I,J,L,O,F,B,?) >
+Utilisation par jour$W
+  LUN  MAR  MER  JEU  VEN  SAM  DIM$W
+Utilisation par heure$W
+0 0 0 0 0 1 1 1 1 1 2 2  Heure$W
+0 2 4 6 8 0 2 4 6 8 0 2$W
+$N messages actifs$W
+$0 Connexions depuis $j$W
+Connexions$W  Temps moyen par connexion  : $0min $1s$W
+  Nombre de conexions / jour : $0$W
+  Heures de pointe           : A $1:00h et $0:00h.$W
+Utilisation (en pourcentage)$W
+  BBS                      : $0 %%$W
+  Serveur                  : $0 %%$W
+Details serveur :$W
+  DOS                      : $0 %%$W
+  Qra-Locator              : $0 %%$W
+  Docs                     : $0 %%$W
+  Connexions-stat          : $0 %%$W
+  Nomenclature             : $0 %%$W
+  Satellites               : $0 %%$W
+$0 $1 $2 $3 $j $K = $4'$5"$W
+#
+# T_NOM (MODULE NOMENCLATURE)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+$WNOMENCLATURE (I,N,R,F,B,?) >
+$W
+$W(R)echerche$W(I)ndicatifs$W(N)om et adresse$W(F) Retour au serveur$W(B) Deconnexion$W$WNOMENCLATURE (I,N,R,F,B,?) >
+$WIndicatif: $0$W
+$WDerniere connexion le $j a $K.$W
+Nom, prenom : $1 $0$WAdresse     : $2, $3$WLocator     : $4$WTel. Perso  : $5$WTel. Modem  : $6$WHome-BBS    : $7$W
+Nom                        :
+Numero, rue                :
+Ville                      :
+Telephone, perso           :
+Telephone, modem           :
+Qra-locator                :
+$WTotal $0 indicatifs$W
+*** Indicatif $0 inconnu.$W
+*** Erreur Qra-locator (format : deux lettres, deux chiffres, deux lettres).$W
+#
+# T_TRJ (MODULE SATELLITE)
+# ~~~~~~~~~~~~~~~~~~~~~~~~
+#
+$WSATELLITES (C,P,T,F,B,?) >
+$W(M) Mise a jour$W
+$W(C) Description$W(P) Parametres orbitaux$W(T) Calcul de trajectographie$W(F) Retour au serveur$W(B) Deconnexion$W$WSATELLITES (C,P,T,F,B,?) >
+$WQRA-Locator : $0    Satellite $1$W
+--------------------------------------------------------------$W
+| Heure | Az. | El. | Dpl. | Dist. | Alti. | Lon | Lat | Ph. |$W
+|  UTC  | Deg | Deg | KHz  |  Km   |  Km   | Deg | Deg | 256 |$W
+--------------- $j-$y ----- Orbite #$0 ----------------$W
+| $0:$1 | $2 | $3 | $4 | $5 | $6 | $7 | $8 | $9 |$W
+Date de debut de clacul (DD/MM/YY) (Return = defaut) :
+Heure de debut de calcul (HH:MM)   (Return = defaut) :
+$WPatientez SVP...$W
+$WPas d'information sur ce satellite.$W
+#
+Derniere mise a jour $j-$y.$W
+Nom du satellite    :
+Orbite de reference :
+Annee de reference  :
+Jour de reference   :
+Anomalie moyenne    :
+Arg. de perigee     :
+R.A.A.N.            :
+Inclinaison         :
+Excentricite        :
+Mouvement moyen     :
+Derivee du mvt moyen:
+Pas de calcul (mn)  :
+Frequence emission  :
+$WParametres orbitaux de $0$W
+Numero d'orbite     : $0$W
+Annee               : $0$W
+Jour                : $0$W
+Anomalie moyenne    : $0$W
+Arg. de perigee     : $0$W
+R.A.A.N.            : $0$W
+Inclinaison         : $0$W
+Excentricite        : $0$W
+Mouvement moyen     : $0$W
+Derivee du mvt moyen: $0$W
+Pas de calcul       : $0$W$W
+($0) $1
+(F) Fin$W
+#
+# T_QTH (MODULE QRA LOCATOR)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+$WQRA-LOCATOR (C,D,L,Q,F,B,?) >
+$W
+$W(Q) Qra -> Long/Lat$W(L) Long/Lat -> Qra$W(D) Dist. et Azimuth$W(C) Distances$W(F) Retour au serveur$W(B) Deconnexion$W$WQRA-LOCATOR (C,D,L,Q,F,B,?) >
+$WEntrez votre Qra Locator SVP (Q to Quit) :$W
+Coordonnees geographiques au centre du carre :$W
+Longitude  : $0 degres $1' $2  : $3 grades $2$W
+Latitude   : $0 degres $1' $2  : $3 grades $2$W
+$WUtilisez le format$WEn degres  = 1:45:00 [direction].$WEn grades = 1.5 [direction]$W[direction] sera remplace by Nord, Sud, Est ou Ouest.$W
+$WLongitude (Est/Ouest)  :
+$WLatitude (Nord/Sud)    :
+$WQra Locator : $0$W
+$WQra Locator origine     :
+Qra Locator destination :
+Azimuth  : $0 degres $1' : $2 grades$W
+Distance : $0 Km$W
+$WVotre Qra Locator :
+$WQra Locator destination (F = Fin) :
+Nombre de calculs $0 - Total des distances : $1 Km$W
+Calcul termine.$W
+#
+# T_DOS (MODULE DOS)
+# ~~~~~~~~~~~~~~~~~~
+#
+$W[%dKB] $u:$0>
+Repertoire $0 supprime.$W
+Pas de fichier.$W
+$0 $1 $2 $3   $4 $5 $6 $7$W
+Envoi du fichie $f interrompu.$W
+Le fichier $f de $0 octets a ete transfere ($1 octets/s).$W
+Envoyez le fichier $f (Fin =  Ctrl-Z).$W
+$0 octets copies.$W
+$W$j $T FBBDOS V$E$W
+$WCommandes disponibles :$W
+Le fichier $f a ete supprime.$W
+$W$0 octets libres.
+#
+# T_INF (MODULE DOCUMENTATION)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+$WDOCS$0 (#,L,R,F,B,?) >
+$W(D) Description.$W
+$W(numero) Lire la doc (numero)$W(L) Liste$W(R) Retour au niveau precedent$W(F) Retour au serveur$W(B) Deconnexion$WDOCS$0 (#,L,F,R,B,?) >
+Cette entree n'existe pas.$W
+#
+# T_GATE (GATEWAY MODULE)
+# ~~~~~~~~~~~~~~~~~~~~~~~
+Vous etes sur le canal $=, port $!. $g port(s) disponible(s).$WAcces au LINUX-FpacNode F6FBB-10 sur port NETWORK$WH = Aide. Q = Quitte.$W
+Entrez le numero de port (Q = Quitte) :
+Vous utilisez le canal $0 du port : $1.$W
+Desole, pas de canal disponible sur ce port.$W
+Cmd :
+Mode conversation. Esc ou >(return) pour revenir en mode commande.$W
+*** Erreur : Vous etes deja sur ce port!$W
+*** Erreur : Port invalide.$W
+*** Le gateway n'est pas disponible, $I.$W
+$O: Commande $0 invalide. (C,D,J,K,H,M,P,Q,?) >$W
+Envoi de $f...$W
+Capture du texte dans le fichier $f.$W
+Capture du texte terminee.$W
+#
+# T_YAP (MODULE YAPP)
+# ~~~~~~~~~~~~~~~~~~~
+#
+Envoie le(s) fichier(s) $f avec le protocole $0.$W
+Pret a recevoir le fichier $f avec le protocole $0.$W
+Desole, $0 n'est pas autorise sur ce port.$W
+Description du fichier, max 40 caracteres :
+$0 $1 $2 $3   $4$W
+#
+# T_CNF (MODULE CONFERENCE)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+Vous entrez dans la conference (Aide = ".?").$W
+Il est $H. Stations dans la conference :$W
+Indicatif : $0, canal $1.$W
+$H $0 entre dans la conference.$W
+Vous quittez la conference.$W
+$H $0 a quitte la conference.$W
+$W[$H - $0]$W
+Il n'y a personne dans la conference.$W
+$H $0 : Trop de repetitions.$W
+$H $0 : Occupe.$W
+$H $0 n'est pas dans la conference!$W
+#
+# **Fin du fichier**
+#     (Ouf!)
+#
+# T_THE (MODULE THEMES)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+Msg #   Dim  Pour   Exped  Sujet      (Theme:%T)$W
+$M $n $G $P $1$W
+%T - %t bulls (B,F,H,L,R,Numero) :
+#
+#

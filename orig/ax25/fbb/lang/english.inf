@@ -1,0 +1,28 @@
+
+BBS F6FBB-1 - $? - Roquettes (15 Km south Toulouse) :
+
+Port 1 : (16 channels) 9600 Bds full duplex link to F6FBB-9
+Port 2 : ( 1 channel ) HF access 300 Bds AFSK
+Port 3 : ( 1 channel ) telephone access 1200-14400 Bds
+Port 4 : ( 1 channel ) HF access 1200 Bds PSK
+
+Micro  : PC clone 386 DX 40 cache 128K
+Ram    : 16 MB
+Disk   : 212 MB SCSI
+Soft   : F6FBB release $E
+
+
+Front-end NODE F6FBB-9 :
+
+Port 1 : 9600 Bds full duplex link to FE6BEX-9 (430.575/439.975)
+Port 2 : Users' access 1200 Bds AFSK           (145.275)
+Port 3 : 9600 Bds full duplex link to F6FBB-1  (RS 232)
+Port 4 : 1200 Bds AFSK link to F6CDD-1         (432.675)
+
+Micro  : PC clone 386 SX 20
+Ram    : 2 MB
+Disk   : 360 KB floppy
+Soft   : FPAC 1.1 (ROSE compatible)
+
+USERS  :
+$%

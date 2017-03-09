@@ -1,0 +1,29 @@
+#
+# Configuration of the REDIST server
+#
+# Route for the local BBS (SP LOCBBS)
+LOCBBS=F6FBB
+# Name of the BBS coverage
+LOCBBS_DESC=F6FBB BBS
+#
+#Route(s) for local bulletins (SP LOCAL)
+LOCAL=F6FBB,F6CDD
+# Coverage of the local BBS
+LOCAL_DESC=Toulouse
+#
+# Route(s) for regional bulletins (SP REGION)
+REGION=FMLR
+# Name of the region
+REGION_DESC=South-West of France
+#
+# Route(s) for national bulletins (SP NATION)
+NATION=FRA
+# Name of the country
+NATION_DESC=France
+#
+# Default destination
+DEFAULT_TO=INFO
+#
+# Send a mail to the sysop
+MAIL_SYSOP=YES
+#

@@ -1,0 +1,27 @@
+
+
+BBS F6FBB-1 - $? - Roquettes (15 Km sud Toulouse)
+
+Port 1 : (20 voies) Liaison ethernet vers F6FBB-11
+Port 2 : ( 1 voie ) Acces decametrique 300 Bds
+Port 3 : ( 1 voie ) Acces telephone 1200-28800 Bds
+Port 4 : ( 1 voie ) Acces ethernet local
+
+Micro  : compatible PC 486 SX 33
+Ram    : 16 MB
+Disque : 400 MB SCSI
+Soft   : F6FBB version $E
+
+NODAL F6FBB-10/F6FBB-11
+
+Port 1 : Liaison 9600 Bds full duplex vers F6BEX-9 (430.575/439.975)
+Port 2 : Acces local VHF 1200 Bds simplex          (145.275)
+Port 3 : Acces local UHF 9600 Bds simplex          (432.650)
+Port 4 : Liaison 2400 Bds AFSK vers F5JTU-9        (430.425/439.825)
+Port 5 : Liaison ethernet vers F6FBB-1
+
+Micro  : compatible PC 486 DX2/66
+Ram    : 8MB
+Disque : Floppy 1.4MB
+Soft   : FPAC 2.0 LINUX (compatible ROSE)
+

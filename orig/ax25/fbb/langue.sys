@@ -1,0 +1,50 @@
+#
+# Fichier d'affectation des langues aux premieres connexions.
+# Tout indicatif non reconnu prend par defaut la langue 1
+# 3 parametres dans l'ordre : Nb-Langues Nb-Buffers Langue-defaut
+2 1 1
+#
+ENGLISH
+FRANCAIS
+#
+# 1 : Anglais
+# 2 : Francais
+#
+C3*	7
+CT*	9
+CU*	9
+DU*	1
+D*	6
+EK*	1
+E?3*	7
+E?5*	7
+E?6*	7
+E*	3
+F*	2
+H*	2
+I*	4
+LA*	8
+ON1A*	5
+ON1B*	5
+ON1C*	5
+ON1K*	2
+ON4*	2
+ON5*	2
+ON6*	2
+ON7*	2
+ON8*	1
+ON9*	1
+OZ*	10
+PY*	9
+P*	5
+SK*	11
+SM*	11
+TU*	2
+TK*	2
+VE2*	2
+YU*	12
+YT*	12
+#
+3A*	2
+3B*	2
+#

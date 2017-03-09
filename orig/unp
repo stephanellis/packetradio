@@ -1,0 +1,10 @@
+#! /bin/bash
+
+
+while [ 0 ] ; do
+	read TEXT
+	if [ "$TEXT" == "/EX" ] ; then
+		break
+	fi
+	beacon -d "$1" -s $2 "$TEXT"
+done

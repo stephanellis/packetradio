@@ -1,0 +1,49 @@
+#! /usr/bin/env python
+
+EOL = "\r"
+
+import sys
+import time
+import feedparser
+
+def send(msg):
+    sys.stdout.write(msg + EOL)
+    sys.stdout.flush()
+
+def recv():
+    msg = ""
+    while True:
+        c = sys.stdin.read(1)
+        if c == EOL:
+            return msg
+        msg = msg + c
+
+
+def getnews():
+    feed = feedparser.parse("http://www.kswo.com/category/216452/kpho-newstream?clienttype=rss")
+    send("KSWO Local News - Latest 5 Headlines")
+    for i in feed["items"][0:5]:
+        send(i["title"])
+
+def mainloop():
+    while True:
+        send("Enter Command: ")
+        cmd = recv()
+        if cmd == "quit":
+            sys.exit()
+        if cmd == "help":
+            send("quit    - exit and disconnect")
+            send("news    - display headlines")
+            send("help    - display this help text")
+        if cmd == "news":
+            getnews()
+
+
+if __name__ == "__main__":
+    if sys.stdin.isatty():
+        EOL = "\n"
+    send("hamshell v.1a")
+    send("use the help command if you need it, quit to disconnect")
+    mainloop()
+
+

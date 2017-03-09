@@ -1,0 +1,12 @@
+# System Password file for axspawn
+# disable user self-administered passwords in $HOME/.bcpasswd
+# with the line "systempasswordonly"
+# systempasswordonly
+# Examples (sys and md5 passwords may differ):
+# md5 standard (secure) - length: >= 8 and <= 80 characters
+# username:md5:mBcxQbex
+# sys/baycom standard (not very secure) - length: >= 20 and <= 80 characters
+# username:sys:WZuvAHAJKpuJWZupm1Ah
+# unix standard (plaintext): no password is read here. Your password is looked
+#   up during login in the system password table /etc/passwd or /etc/shadow
+# unix

@@ -1,0 +1,59 @@
+#
+# Fichier de rejets
+# 
+# Dans l'ordre, et a partir de la 1ere colonne :
+# Type, expediteur, routage, destinataire, taille maximale acceptee
+#
+# L'* et le ? peuvent se substituer aux caracteres (syntaxe MS-DOS)
+#
+# A partir du 2-05-92
+#
+# Type Exp    Via     Pour    BID      MaxLg
+#-------------------------------------------
+L B    *      *       *       *          0
+H *    *      *       HUMOUR  *          0
+H *    F1BBI  *       *       *          0
+#H *    F6HED  *       *       *          0
+#H *    F6CDD  *       *       *          0
+#H *    *      *       F6CDD   *          0
+H *    F5OJL  *       *       *          0
+H B    G3RJM  *       *       *          0
+H B    F1VY   *       *       *          0
+H B    F6AOK  *       *       *          0
+H B    F6CDX  *       *       *          0
+H B    F6CVM  *       *       *          0
+H B    F6IQF  *       *       *          0
+H *    EA5EC  *       *       *          0
+H *    *      *       *       *_F*5SV    0
+H *    EB5HST *       *       *          0
+H *    FD1SLQ *       SYSOP   *          0
+H *    DL0SS  *       *       *          0
+H *    F5PJE  *       *       *          0
+H *    VE3RZX *       *       *          0
+H B    *      *       CB      *          0
+H B    I0PMW  *       *       *          0
+#
+R B    *      EA      *       *          0
+R B    *      AF      *       *          0
+R B    *      NEWSUU  *       *          0
+R *    *      FRANCA  VENTE*  *          0
+R *    *      FRANCA  ACHAT*  *          0
+R *    FXXXX  *       *       *          0
+R *    FILTER *       *       *          0
+#R B	*	EU	*	*	0
+#R B	*	FRA	*	*	0
+#R B	*	FRANCA	*	*	0
+#R B	*	WW	*	*	0
+R *    ALB#*  *       *       *          0
+R *    FRA#*  *       *       *          0
+R *    GER#*  *       *       *          0
+R *    PPN#*  *       *       *          0
+R *    POL#*  *       *       *          0
+R *    POR#*  *       *       *          0
+R *    PWR#*  *       *       *          0
+R *    TIP#*  *       *       *          0
+R *    AP1BOX *       *       *          0
+H *    @@@#*  *       *       *          0
+H *    FE6FBB *       *       *          0
+H B    *      USA       *       *          0
+#

@@ -1,0 +1,23 @@
+>>> s = socket.socket(socket.AF_INET, socket.SOCK_RAW)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/lib/python2.7/socket.py", line 187, in __init__
+    _sock = _realsocket(family, type, proto)
+socket.error: [Errno 93] Protocol not supported
+>>> s = socket.socket(socket.AF_PACKET, socket.SOCK_RAW)
+>>> s.bind(("ax0", 0x0002))
+>>> s.revc(20)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: '_socketobject' object has no attribute 'revc'
+>>> s.recv(20)
+'\x00\x92\x88@@@@`\xae\xb0j\x98\x82\xae\xe3\x03\xf0WX5'
+>>> s.send("sdfjnsdfsdf")
+11
+>>> s.recv(23)
+'\x00\xa6\xa8\xa0\x90\x9c@\xe0\x96\x8ej\x92\x86\xb4`\x86\x86\x8a\x9e\x86@\xe1\x03'
+>>> s.recv(23)
+^CTraceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyboardInterrupt
+
